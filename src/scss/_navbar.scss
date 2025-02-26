@@ -1,0 +1,106 @@
+.navbar {
+    background-color: #171d25;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .navbar1 {
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 11px;
+            font-weight: 400;
+            color: #a2a9b2;
+        }
+    }
+
+    .navbar1-1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .logo {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            cursor: pointer;
+            .icon {
+                background-color: #8b929a;
+                border-radius: 100%;
+                transition: 0.3s;
+                path {
+                    fill: #171d25;
+                }
+            }
+
+            &:hover {
+                p {
+                    color: #fff;
+                }
+                .icon {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        p {
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .navbar1-2 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .icon-container {
+            background-color: #272d37;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: #3d4450;
+            }
+
+            .icon {
+                width: 25px;
+            }
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: #272d37;
+            padding: 0 10px;
+            cursor: default;
+            .image {
+                width: 34px;
+                height: 34px;
+                border: solid 2px #676767;
+            }
+        }
+    }
+
+    .navbar2 {
+        display: flex;
+        gap: 30px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+            color: #cbcbcb;
+            }
+        }
+    }
+}
