@@ -52,9 +52,14 @@
     .image2 {
         width: 54px;
     }
+    .image3 {
+        color: #fff;
+        width: 54px;
+        height: 54px;
+    }
     .badget {
         .name {
-            font-size: 12px;
+            font-size: 18px;
             font-weight: 400;
             color: #fff;
         }
@@ -69,9 +74,9 @@
 .first {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     .data {
         width: 100%;
-        padding: 0 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -86,14 +91,14 @@
             align-items: center;
         }
     }
-    .stats {
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .levelContainer {
         display: flex;
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
-        .levelContainer {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
     }
 }

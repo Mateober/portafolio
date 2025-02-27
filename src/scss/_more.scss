@@ -1,0 +1,69 @@
+.more {
+    background-color: #0e0c0c;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    justify-content: space-between;
+    .container-more {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .title {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+        }
+        .icon {
+            color: #fff;
+            width: 28px;
+            height: 28px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .softskills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            background-color: #3a3636;
+            border: solid 1px #4d4b4b;
+        }
+    }
+    .softskills2 {
+        p {
+            background-color: #262424;
+           
+        }
+    }
+    .languages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .language {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.availability,
+.softskills,
+.languages {
+    padding-left: 5px;
+}

@@ -8,7 +8,8 @@
         "code": null,
         "img1": "/10.png",
         "img2": "/23.png",
-        "type": "Foro / Plataforma Social"
+        "type": "Foro / Plataforma Social",
+        "real": true
     },
     {
         "title": "Jardín de Infantes SOL",
@@ -19,7 +20,8 @@
         "code": null,
         "img1": "/8.png",
         "img2": "/17.png",
-        "type": "Landing Page"
+        "type": "Landing Page",
+        "real": true
     },
     {
         "title": "MovieApp",
@@ -30,7 +32,8 @@
         "code": "https://github.com/Mateober/movie-app",
         "img1": "/7.png",
         "img2": "/19.png",
-        "type": "Aplicacion Web"
+        "type": "Aplicacion Web",
+        "real": false
     },
     {
         "title": "Bookhouse",
@@ -41,7 +44,8 @@
         "code": "https://github.com/Mateober/bookhouse-mateo-bertello",
         "img1": "/4.png",
         "img2": "/14.png",
-        "type": "E-commerce"
+        "type": "E-commerce",
+        "real": false
     },
     {
         "title": "Sportscenter",
@@ -52,6 +56,7 @@
         "code": "https://github.com/Mateober/sportscenter-mateo-bertello",
         "img1": "/2.png",
         "img2": "/22.png",
-        "type": "E-commerce"
+        "type": "E-commerce",
+        "real": false
     }
 ]

@@ -17,7 +17,6 @@
             color: #fff;
             font-size: 25px;
             font-weight: 500;
-            border-bottom: 1px solid #fff;
             display: inline;
         }
     }
@@ -80,10 +79,18 @@
             .type {
                 font-size: 14px;
                 font-weight: 400;
-                color: #10b981;
-                background-color: #182A24;
+                color: #008efb ;
+                background-color: #171f2f  ;
                 padding: 5px 10px;
                 border-radius: 30px;
+            }
+            .type-yellow {
+                color: #F97316;
+                background-color: #2A1E12 ;
+            }
+            .type-green {
+                color: #10b981;
+                background-color: #182a24;
             }
         }
         .descripcion {
