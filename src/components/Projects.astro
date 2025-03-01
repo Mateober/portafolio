@@ -2,77 +2,75 @@
 import projects from './projects.json';
 ---
 
-<div class="container-projects">
-    <div class="projects">
-        <div class="title">
-            <p>Proyectos Recientes</p>
-        </div>
-        <div class="projects2">
-            <div class="abilities3">
-                {
-                    projects.map((project) => (
-                        <div class="project">
-                            <div class="project-img2">
-                                <div class="project-img">
-                                    <img class="img1" src={project.img1} alt={`Proyecto ${project.title} laptop`} />
-                                    <img class="img2" src={project.img2} alt={`Proyecto ${project.title} mobile`} />
-                                </div>
-                            </div>
-
-                            <div class="project-data">
-                                <div class="project-title">
-                                    <div class="titlecontainer1">
-                                        <p>{project.title}&nbsp</p>
-                                    </div>
-                                    <div class="titlecontainer2">
-                                        <p class={`type ${project.real ? 'type-green' : 'type-yellow'}`}>{project.subtitle}</p>
-                                        <p class="type">{project.type}</p>
-                                    </div>
-                                </div>
-                                <p class="description">{project.description}</p>
-                                <div class="tecnologies">
-                                    {project.skills.map((skill) => (
-                                        <p>{skill}</p>
-                                    ))}
-                                </div>
-                                <div class="btns">
-                                    <a class="btn" href={project.demo} target="_blank">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="20px"
-                                            height="20px"
-                                            viewBox="0 0 16 16"
-                                            version="1.1"
-                                            fill="none"
-                                            stroke="#fff"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="1.5"
-                                        >
-                                            <polyline points="8.25 2.75,2.75 2.75,2.75 13.25,13.25 13.25,13.25 7.75" />
-                                            <path d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5" />
-                                        </svg>
-                                        Probar Ahora
-                                    </a>
-
-                                    <a class={`btn ${project.code ? '' : 'btn-disable'}`} href={project.code || null} target="_blank">
-                                        <svg viewBox="0 0 128 128" width="20px" height="20px">
-                                            <g fill="#fff">
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
-                                                />
-                                            </g>
-                                        </svg>
-                                        Ver Código
-                                    </a>
-                                </div>
+<div class="projects">
+    <div class="projects-title">
+        <p>Proyectos Recientes</p>
+    </div>
+    <div class="projects-list">
+        <div class="projects-group">
+            {
+                projects.map((project) => (
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <div class="project-image-container2">
+                                <img class="project-image-desktop" src={project.img1} alt={`Proyecto ${project.title} laptop`} />
+                                <img class="project-image-mobile" src={project.img2} alt={`Proyecto ${project.title} mobile`} />
                             </div>
                         </div>
-                    ))
-                }
-            </div>
+
+                        <div class="project-info">
+                            <div class="project-header">
+                                <div>
+                                    <p>{project.title}&nbsp</p>
+                                </div>
+                                <div class="project-tags">
+                                    <p class={`tag ${project.real ? 'tag-green' : 'tag-orange'}`}>{project.subtitle}</p>
+                                    <p class="tag">{project.type}</p>
+                                </div>
+                            </div>
+                            <p class="project-description">{project.description}</p>
+                            <div class="project-technologies">
+                                {project.skills.map((skill) => (
+                                    <p>{skill}</p>
+                                ))}
+                            </div>
+                            <div class="project-buttons">
+                                <a class="btn" href={project.demo} target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="20px"
+                                        height="20px"
+                                        viewBox="0 0 16 16"
+                                        version="1.1"
+                                        fill="none"
+                                        stroke="#fff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                    >
+                                        <polyline points="8.25 2.75,2.75 2.75,2.75 13.25,13.25 13.25,13.25 7.75" />
+                                        <path d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5" />
+                                    </svg>
+                                    Probar Ahora
+                                </a>
+
+                                <a class={`btn ${project.code ? '' : 'btn-disable'}`} href={project.code || null} target="_blank">
+                                    <svg viewBox="0 0 128 128" width="20px" height="20px">
+                                        <g fill="#fff">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                                            />
+                                        </g>
+                                    </svg>
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
         </div>
     </div>
 </div>

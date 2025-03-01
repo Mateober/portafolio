@@ -1,78 +1,82 @@
-.container-skills {
+.skills {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.skills {
-    max-width: 652px;
-    //max-width: 70%;
-    background-color: #141111;
-    border-radius: 5px;
-    .title {
-        background-color: #090808;
-        padding: 11px 20px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+    .skill-category {
+        max-width: 652px;
+        //max-width: 70%;
+        background-color: #141111;
+        border-radius: 5px;
+        .skill-title {
+            background-color: #090808;
+            padding: 11px 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            p {
+                font-size: 16px;
+                font-weight: 200;
+                color: #fff;
+            }
+        }
+        .skill-list {
+            padding: 20px 10px;
+            .skill-group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px;
+                background-color: #0e0c0c;
+                gap: 28px;
+                flex-wrap: wrap;
+                .skill-item {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 59.53px;
+                    height: 59.53px;
 
-        p {
-            font-size: 16px;
-            font-weight: 200;
-            color: #fff;
-        }
-    }
-    .abilities {
-        padding: 20px 10px;
-        .abilities2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 8px;
-            background-color: #0e0c0c;
-            gap: 28px;
-        }
-        .skill-container {
-            position: relative;
-            display: inline-block;
-            width: 64px;
-            height: 64px;
-            .skill {
-                cursor: pointer;
-                background-color: rgba(60, 57, 57, 0.386);
-                padding: 10px;
-                transition: 0.3s;
-                &:hover {
-                    transform: scale(1.2);
+                    .skill-icon {
+                        cursor: pointer;
+                        background-color: rgba(60, 57, 57, 0.386);
+                        padding: 10px;
+                        transition: 0.3s;
+                        
+                        
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                    .tooltip {
+                        position: absolute;
+                        bottom: 120%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #c2c2c2;
+                        color: black;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                        pointer-events: none;
+                    }
+                    .tooltip-arrow {
+                        position: absolute;
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 5px solid #c2c2c2;
+                    }
+                }
+                .skill-item:hover .tooltip {
+                    opacity: 1;
                 }
             }
-            .tooltip {
-                position: absolute;
-                bottom: 120%;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: #C2C2C2;
-                color: black;
-                padding: 5px 10px;
-                border-radius: 5px;
-                font-size: 12px;
-                white-space: nowrap;
-                opacity: 0;
-                transition: opacity 0.3s;
-                pointer-events: none;
-            }
-            .tooltip-arrow {
-                position: absolute;
-                bottom: -5px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 0;
-                height: 0;
-                border-left: 5px solid transparent;
-                border-right: 5px solid transparent;
-                border-top: 5px solid #C2C2C2;
-            }
-        }
-        .skill-container:hover .tooltip {
-            opacity: 1;
         }
     }
 }
