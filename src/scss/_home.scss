@@ -1,104 +1,46 @@
-.image {
-    width: 164px;
-    height: 164px;
-    border: solid 2px #676767;
-}
-.flag {
-    width: 16px;
-    height: 11px;
-}
-.name {
-    font-size: 24px;
-    font-weight: 200;
-    color: #fff;
-}
-.city {
-    font-size: 13px;
-    font-weight: 400;
-    color: #c4c4c4;
-}
-.description {
-    font-size: 13px;
-    font-weight: 400;
-    color: #c4c4c4;
-}
-.level {
-    font-size: 24px;
-    font-weight: 200;
-    color: #fff;
-}
-.circle {
-    width: 32px;
-    height: 32px;
-    border: 1px solid red;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .number {
-        font-size: 16px;
-        font-weight: 200;
-        color: #c4c4c4;
-    }
-}
-.best {
-    width: 268px;
-    height: 70px;
-    background-color: #141010;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 10px;
-    .image2 {
-        width: 54px;
-    }
-    .image3 {
-        color: #fff;
-        width: 54px;
-        height: 54px;
-    }
-    .badget {
-        .name {
-            font-size: 18px;
-            font-weight: 400;
-            color: #fff;
-        }
-        .xp {
-            font-size: 12px;
-            font-weight: 400;
-            color: #ebebeb;
-        }
-    }
-}
-
-.first {
+.profile {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    .data {
+    .profile-picture {
+        width: 164px;
+        height: 164px;
+        border: solid 2px #676767;
+    }
+    .profile-info {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        .nameContainer {
+        .profile-header {
             display: flex;
             flex-direction: column;
             gap: 6px;
+
+            .profile-name {
+                font-size: 24px;
+                font-weight: 200;
+                color: #fff;
+            }
+            .profile-location {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                .country-flag {
+                    width: 16px;
+                    height: 11px;
+                }
+                .location-text {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #c4c4c4;
+                }
+            }
         }
-        .cityContainer {
-            display: flex;
-            gap: 4px;
-            align-items: center;
+        .profile-description {
+            font-size: 13px;
+            font-weight: 400;
+            color: #c4c4c4;
         }
-    }
-}
-.stats {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .levelContainer {
-        display: flex;
-        align-items: center;
-        gap: 10px;
     }
 }
