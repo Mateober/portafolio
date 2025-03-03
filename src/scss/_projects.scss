@@ -67,7 +67,10 @@
                             color: #008efb;
                             background-color: #171f2f;
                             padding: 5px 10px;
-                            border-radius: 30px;
+                            border-radius: 30px;display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
                         }
                         .tag-orange {
                             color: #f97316;
@@ -126,5 +129,35 @@
                 }
             }
         }
+    }
+}
+
+.project-img-container3 {
+    display: none !important;
+}
+
+@media (max-width: 976px) { 
+    .projects {
+        .projects-list {
+            .projects-group {
+                gap: 15px;
+                .project-card {
+                    flex-direction: column;
+                    .project-img-container {
+                        justify-content: center;
+                        display: none;
+                    }
+                    .project-info {
+                        .project-header {
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .project-img-container3 {
+        display: flex !important;
     }
 }

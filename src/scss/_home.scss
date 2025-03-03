@@ -44,3 +44,16 @@
         }
     }
 }
+
+@media (max-width: 449px) {  
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        .profile-info {
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+    }
+}

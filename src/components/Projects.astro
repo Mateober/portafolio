@@ -28,6 +28,12 @@ import projects from './projects.json';
                                     <p class="tag">{project.type}</p>
                                 </div>
                             </div>
+                            <div class="project-img-container project-img-container3">
+                                <div class="project-image-container2">
+                                    <img class="project-image-desktop" src={project.img1} alt={`Proyecto ${project.title} laptop`} />
+                                    <img class="project-image-mobile" src={project.img2} alt={`Proyecto ${project.title} mobile`} />
+                                </div>
+                            </div>
                             <p class="project-description">{project.description}</p>
                             <div class="project-technologies">
                                 {project.skills.map((skill) => (
