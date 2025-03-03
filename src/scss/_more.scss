@@ -1,4 +1,4 @@
-.more {
+.extras {
     background-color: #0e0c0c;
     height: 100%;
     width: 100%;
@@ -7,32 +7,33 @@
     gap: 30px;
     padding: 20px;
     justify-content: space-between;
-    .container-more {
+    .extra-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
-    .title {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        p {
-            font-weight: 600;
-            font-size: 18px;
-            color: #fff;
+        .extra-title {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            p {
+                font-weight: 600;
+                font-size: 18px;
+                color: #fff;
+            }
+            .extra-icon {
+                color: #fff;
+                width: 28px;
+                height: 28px;
+            }
         }
-        .icon {
-            color: #fff;
-            width: 28px;
-            height: 28px;
-        }
     }
+
     p {
         color: #fff;
         font-size: 16px;
         font-weight: 400;
     }
-    .softskills {
+    .soft-skills {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -45,17 +46,16 @@
             border: solid 1px #4d4b4b;
         }
     }
-    .softskills2 {
+    .hobbies {
         p {
             background-color: #262424;
-           
         }
     }
     .languages {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        .language {
+        .language-item {
             display: flex;
             justify-content: space-between;
         }
