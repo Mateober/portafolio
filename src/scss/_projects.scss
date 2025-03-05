@@ -148,6 +148,7 @@
                         display: none;
                     }
                     .project-info {
+                    
                         .project-header {
                             flex-direction: column;
                             gap: 10px;
@@ -159,5 +160,6 @@
     }
     .project-img-container3 {
         display: flex !important;
+        margin: 10px 0;
     }
 }
