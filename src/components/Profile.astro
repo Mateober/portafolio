@@ -1,16 +1,19 @@
+---
+const { translations } = Astro.props;
+---
+
 <div class="profile">
     <img class="profile-picture" src="/perfil.jpeg" alt="" />
     <div class="profile-info">
         <div class="profile-header">
-            <p class="profile-name">Mateo Bertello</p>
+            <p class="profile-name">{translations?.profile?.nombre}</p>
             <div class="profile-location">
                 <img class="country-flag" src="/arg.png" alt="" />
-                <p class="location-text">Rosario, Santa Fe, Argentina</p>
+                <p class="location-text">{translations?.profile?.ciudad}</p>
             </div>
         </div>
         <p class="profile-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem. Vel quasi accusamus sunt ad earum, voluptate ut corporis quo itaque corrupti laborum perferendis molestias quis
-            ullam! At, magni labore.
+            {translations?.profile?.descripcion}
         </p>
     </div>
 </div>

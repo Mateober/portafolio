@@ -1,3 +1,7 @@
+---
+const { translations } = Astro.props;
+---
+
 <div class="extras">
     <div class="extra-container">
         <div class="extra-title">
@@ -11,15 +15,15 @@
                     d="M304 384v-24c0-29 31.54-56.43 52-76c28.84-27.57 44-64.61 44-108c0-80-63.73-144-144-144a143.6 143.6 0 0 0-144 144c0 41.84 15.81 81.39 44 108c20.35 19.21 52 46.7 52 76v24m16 96h64m-80-48h96m-48-48V256"
                 ></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M294 240s-21.51 16-38 16s-38-16-38-16"></path></svg
             >
-            <p>Soft Skills</p>
+            <p>{translations?.extras?.softskills}</p>
         </div>
 
         <div class="soft-skills">
-            <p>Trabajo en equipo</p>
-            <p>Comunicación</p>
-            <p>Resolución de problemas</p>
-            <p>Adaptabilidad</p>
-            <p>Creatividad</p>
+            <p>{translations?.extras?.softskill1}</p>
+            <p>{translations?.extras?.softskill2}</p>
+            <p>{translations?.extras?.softskill3}</p>
+            <p>{translations?.extras?.softskill4}</p>
+            <p>{translations?.extras?.softskill5}</p>
         </div>
     </div>
     <div class="extra-container">
@@ -44,17 +48,17 @@
                     stroke-width="32"
                     d="M256 48v416m208-208H48"></path></svg
             >
-            <p>Idiomas</p>
+            <p>{translations?.extras?.idiomas}</p>
         </div>
 
         <div class="languages">
             <div class="language-item">
-                <p>Español</p>
-                <p>Nativo</p>
+                <p>{translations?.extras?.idioma1}</p>
+                <p>{translations?.extras?.idioma2}</p>
             </div>
             <div class="language-item">
-                <p>Ingles</p>
-                <p>Básico-alto</p>
+                <p>{translations?.extras?.idioma3}</p>
+                <p>{translations?.extras?.idioma4}</p>
             </div>
         </div>
     </div>
@@ -69,11 +73,11 @@
                     stroke-width="32"
                     d="M256 128v144h96"></path></svg
             >
-            <p>Disponibilidad</p>
+            <p>{translations?.extras?.disponibilidad}</p>
         </div>
 
         <div class="availability">
-            <p>Tiempo completo</p>
+            <p>{translations?.extras?.disponibilidad1}</p>
         </div>
     </div>
     <div class="extra-container">
@@ -88,14 +92,14 @@
                     d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81c-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0 0 18 0c96.26-65.34 184.09-143.09 183-252.42c-.54-52.67-42.32-96.81-95.08-96.81"
                 ></path></svg
             >
-            <p>Hobbies</p>
+            <p>{translations?.extras?.hobbies}</p>
         </div>
 
         <div class="soft-skills hobbies">
-            <p>Peliculas</p>
-            <p>Futbol</p>
-            <p>Musica</p>
-            <p>Correr</p>
+            <p>{translations?.extras?.hobbie1}</p>
+            <p>{translations?.extras?.hobbie2}</p>
+            <p>{translations?.extras?.hobbie3}</p>
+            <p>{translations?.extras?.hobbie4}</p>
         </div>
     </div>
 </div>

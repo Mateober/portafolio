@@ -1,0 +1,124 @@
+{
+    "navbar": {
+        "portafolio": "portafolio",
+        "inicio": "INICIO",
+        "proyectos": "PROYECTOS",
+        "contacto": "CONTACTO",
+        "cv": "Descargar CV",
+        "nombre": "Mateo Bertello"
+    },
+    "profile": {
+        "nombre": "Mateo Bertello",
+        "ciudad": "Rosario, Santa Fe, Argentina",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem. Vel quasi accusamus sunt ad earum, voluptate ut corporis quo itaque corrupti laborum perferendis molestias quis ullam! At, magni labore."
+    },
+    "level": {
+        "level": "Junior",
+        "role": "Frontend Developer"
+    },
+    "skills": {
+        "frontend": "Expositor Frontend",
+        "backend": "Expositor Backend",
+        "herramientas": "Expositor de Herramientas"
+    },
+    "extras": {
+        "softskills": "Soft Skills",
+        "softskill1": "Trabajo en equipo",
+        "softskill2": "Comunicación",
+        "softskill3": "Resolución de problemas",
+        "softskill4": "Adaptabilidad",
+        "softskill5": "Creatividad",
+        "idiomas": "Idiomas",
+        "idioma1": "Español",
+        "idioma2": "Nativo",
+        "idioma3": "Ingles",
+        "idioma4": "Basico-alto",
+        "disponibilidad": "Disponibilidad",
+        "disponibilidad1": "Tiempo completo",
+        "hobbies": "Hobbies",
+        "hobbie1": "Futbol",
+        "hobbie2": "Musica",
+        "hobbie3": "Correr",
+        "hobbie4": "Peliculas"
+    },
+    "proyects": {
+        "proyectos": "Proyectos Recientes",
+        "real": "Proyecto Real",
+        "practica": "Proyecto de Practica",
+        "foro": "Foro / Plataforma Social",
+        "landing": "Landing",
+        "aplicacion": "Aplicacion Web",
+        "e-commerce": "E-commerce",
+        "btnprobar": "Probar Ahora",
+        "btncodigo": "Ver Codigo",
+        "proyects": [
+            {
+                "title": "Futbolar",
+                "subtitle": "Proyecto Real",
+                "description": "Futbolar es una plataforma web para fanáticos del fútbol en Argentina, con más de 200 usuarios. Los usuarios pueden enivar mensajes en tiempo real en foros dedicados a las distintas divisiones del fútbol argentino, fomentando el debate y la comunidad. La plataforma permite a los usuarios elegir sus equipos favoritos y personalizar su perfil. Además, cuenta con un sistema de moderación con roles de moderador y administrador, asegurando un entorno seguro y ordenado. También incluye un panel de administración para gestionar divisiones y equipos, facilitando la organización del contenido. Desarrollé tanto el frontend como el backend de la plataforma.",
+                "skills": ["ReactJS", "Vite", "Redux", "Sass", "Axios", "React Router", "Node.js", "PostgreSQL", "Sequelize", "Redis", "Socket.IO", "Google OAuth", "Mercado Pago Checkout Pro"],
+                "demo": "https://futbolar.com.ar",
+                "code": null,
+                "img1": "/10.png",
+                "img2": "/23.png",
+                "type": "Foro / Plataforma Social",
+                "real": true
+            },
+            {
+                "title": "Jardín de Infantes SOL",
+                "subtitle": "Proyecto Real",
+                "description": "Este proyecto es una landing page diseñada para el Jardín de Infantes SOL, una institución educativa enfocada en la educación inicial de los niños y niñas. La página ofrece información detallada sobre la institución, una galería de fotos y una sección de contacto para facilitar la comunicación, brindando una experiencia clara y accesible para las familias interesadas.",
+                "skills": ["Astro", "Sass"],
+                "demo": "https://jardinsolrosario.com.ar",
+                "code": null,
+                "img1": "/8.png",
+                "img2": "/17.png",
+                "type": "Landing Page",
+                "real": true
+            },
+            {
+                "title": "MovieApp",
+                "subtitle": "Proyecto de Practica",
+                "description": "MovieApp es una aplicación web que permite a los usuarios buscar información sobre películas y programas de televisión. Utiliza la API de The Movie Database (TMDb) para obtener datos actualizados, incluyendo detalles de la trama, calificaciones, elenco y más. Los usuarios pueden realizar búsquedas, ver detalles de películas y programas de televisión",
+                "skills": ["ReactJS", "Vite", "Redux", "Axios", "Sass", "react-router-dom", "themoviedb API"],
+                "demo": "https://movie-app-mateober.vercel.app/home",
+                "code": "https://github.com/Mateober/movie-app",
+                "img1": "/7.png",
+                "img2": "/19.png",
+                "type": "Aplicacion Web",
+                "real": false
+            },
+            {
+                "title": "Bookhouse",
+                "subtitle": "Proyecto de Practica",
+                "description": "Bookhouse es un e-commerce de libros desarrollado como proyecto final para el curso de 'React Js' de Coderhouse. La aplicación ofrece una amplia gama de libros, permitiendo a los usuarios explorar diferentes categorías, ver detalles de cada libro y simular compras en línea.",
+                "skills": ["ReactJS", "Sass", "react-router-dom", "Firebase"],
+                "demo": "https://bookhouse-mateo-bertello.vercel.app",
+                "code": "https://github.com/Mateober/bookhouse-mateo-bertello",
+                "img1": "/4.png",
+                "img2": "/14.png",
+                "type": "E-commerce",
+                "real": false
+            },
+            {
+                "title": "Sportscenter",
+                "subtitle": "Proyecto de Practica",
+                "description": "Sportscenter es un e-commerce de zapatillas creado como proyecto final para el curso de 'JavaScript' de Coderhouse. La plataforma permite a los usuarios navegar por una variedad de modelos de zapatillas y agregar tus productos al carrito",
+                "skills": ["HTML5", "JavaScript", "Sass"],
+                "demo": "https://sportscenter-mateo-bertello.vercel.app/",
+                "code": "https://github.com/Mateober/sportscenter-mateo-bertello",
+                "img1": "/2.png",
+                "img2": "/22.png",
+                "type": "E-commerce",
+                "real": false
+            }
+        ]
+    },
+    "footer": {
+        "nombre": "Mateo Bertello",
+        "descripcion": "Frontend Developer apasionado por crear experiencias digitales excepcionales.",
+        "frase": "Si alguien más lo hizo, significa que yo también puedo hacerlo. Y si nadie lo ha hecho, entonces seré el primero.",
+        "copyright": "© 2025 Mateo Bertello. Todos los derechos reservados.",
+        "desarrollado": "Desarrolado con Astro"
+    }
+}

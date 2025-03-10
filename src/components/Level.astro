@@ -1,6 +1,10 @@
+---
+const { translations } = Astro.props;
+---
+
 <div class="level">
     <div class="experience-level">
-        <p class="level-text">Junior</p>
+        <p class="level-text">{translations?.level?.level}</p>
         <!--             <div class="circle">
             <p class="number">22</p>
         </div> -->
@@ -15,7 +19,7 @@
             ></svg
         >
         <div class="achievement-info">
-            <p class="role-title">Frontend Developer</p>
+            <p class="role-title">{translations?.level?.role}</p>
             <!-- <p class="years">5 años</p> -->
         </div>
     </div>

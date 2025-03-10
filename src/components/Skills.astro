@@ -1,7 +1,11 @@
+---
+const { translations } = Astro.props;
+---
+
 <div class="skills">
     <div class="skill-category">
         <div class="skill-title">
-            <p>Expositor Frontend</p>
+            <p>{translations?.skills?.frontend}</p>
         </div>
         <div class="skill-list">
             <div class="skill-group">
@@ -38,7 +42,7 @@
     </div>
     <div class="skill-category">
         <div class="skill-title">
-            <p>Expositor Backend</p>
+            <p>{translations?.skills?.backend}</p>
         </div>
         <div class="skill-list">
             <div class="skill-group">
@@ -80,7 +84,7 @@
     </div>
     <div class="skill-category">
         <div class="skill-title">
-            <p>Expositor de Herramientas</p>
+            <p>{translations?.skills?.herramientas}</p>
         </div>
         <div class="skill-list">
             <div class="skill-group">

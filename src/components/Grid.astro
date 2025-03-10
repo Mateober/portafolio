@@ -6,12 +6,13 @@ import Skills from './Skills.astro';
 import Projects from './Projects.astro';
 import Level from './Level.astro';
 import Extras from './Extras.astro';
+const { translations } = Astro.props;
 ---
 
 <div class="parent">
-    <div class="div-profile"><Profile /></div>
-    <div class="div-level"><Level /></div>
-    <div class="div-skills"><Skills /></div>
-    <div class="div-extras"><Extras /></div>
-    <div class="div-projects"><Projects /></div>
+    <div class="div-profile"><Profile translations={translations}/></div>
+    <div class="div-level"><Level translations={translations}/></div>
+    <div class="div-skills"><Skills translations={translations}/></div>
+    <div class="div-extras"><Extras translations={translations}/></div>
+    <div class="div-projects"><Projects translations={translations}/></div>
 </div>

@@ -1,9 +1,13 @@
+---
+const { translations } = Astro.props;
+---
+
 <footer id="footer" class="footer">
     <div class="footer-container">
         <div class="footer-top">
             <div class="footer-info">
-                <p class="footer-title">Mateo Bertello</p>
-                <p class="footer-description">Frontend Developer apasionado por crear experiencias digitales excepcionales.</p>
+                <p class="footer-title">{translations?.footer?.nombre}</p>
+                <p class="footer-description">{translations?.footer?.descripcion}</p>
                 <div class="social-icons">
                     <a target="_blank" href="https://github.com/Mateober"
                         ><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -30,14 +34,14 @@
                 </div>
             </div>
             <div class="footer-quote">
-                <p class="quote-text">"Si alguien más lo hizo, significa que yo también puedo hacerlo. Y si nadie lo ha hecho, entonces seré el primero."</p>
+                <p class="quote-text">"{translations?.footer?.frase}"</p>
             </div>
         </div>
         <div class="footer-divider"></div>
         <div class="footer-bottom">
-            <p>© 2025 Mateo Bertello. Todos los derechos reservados.</p>
+            <p>{translations?.footer?.copyright}</p>
             <div class="built-with">
-                <p>Desarrolado con Astro</p>
+                <p>{translations?.footer?.desarrollado}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     ><path
                         fill="#fff"

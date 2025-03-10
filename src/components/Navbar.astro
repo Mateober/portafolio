@@ -1,5 +1,5 @@
 ---
-
+const { translations } = Astro.props;
 ---
 
 <nav class="navbar">
@@ -8,7 +8,7 @@
         <div class="mobile-header">
             <div class="profile">
                 <img class="image" src="/perfil.jpeg" alt="" />
-                <p>Mateo Bertello</p>
+                <p>{translations?.navbar?.nombre}</p>
             </div>
             <div id="close" class="close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -17,16 +17,16 @@
             </div>
         </div>
         <div class="mobile-body">
-            <p>INICIO</p>
-            <p>PROYECTOS</p>
-            <p>CONTACTO</p>
+            <p>{translations?.navbar?.inicio}</p>
+            <p>{translations?.navbar?.proyectos}</p>
+            <p>{translations?.navbar?.contacto}</p>
         </div>
         <div class="mobile-footer">
             <a class="cv-mobile" target="_blank" href="https://github.com/Mateober">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     ><path fill="#fff" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"></path></svg
                 >
-                <p class="cv">Descargar CV</p>
+                <p class="cv">{translations?.navbar?.cv}</p>
             </a>
             <div class="icons-mobile">
                 <a target="_blank" href="https://github.com/Mateober">
@@ -63,7 +63,7 @@
                         d="M14.9523 6.2635L10.4523 18.2635L9.04784 17.7368L13.5478 5.73682L14.9523 6.2635ZM19.1894 12.0001L15.9698 8.78042L17.0304 7.71976L21.3108 12.0001L17.0304 16.2804L15.9698 15.2198L19.1894 12.0001ZM8.03032 15.2198L4.81065 12.0002L8.03032 8.78049L6.96966 7.71983L2.68933 12.0002L6.96966 16.2805L8.03032 15.2198Z"
                     ></path>
 
-                    <p>Portafolio</p>
+                    <p>{translations?.navbar?.portafolio}</p>
                 </svg>
             </div>
             <svg class="hamburger" id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -78,7 +78,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     ><path fill="#fff" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"></path></svg
                 >
-                <p class="cv">Descargar CV</p>
+                <p class="cv">{translations?.navbar?.cv}</p>
             </a>
             <a class="icon-container" target="_blank" href="https://github.com/Mateober">
                 <svg class="icon" viewBox="0 0 128 128">
@@ -104,14 +104,14 @@
 
             <div class="profile">
                 <img class="image" src="/perfil.jpeg" alt="" />
-                <p>Mateo Bertello</p>
+                <p>{translations?.navbar?.nombre}</p>
             </div>
         </div>
     </div>
     <div class="navbar2">
-        <p>INICIO</p>
-        <p>PROYECTOS</p>
-        <p>CONTACTO</p>
+        <p>{translations?.navbar?.inicio}</p>
+        <p>{translations?.navbar?.proyectos}</p>
+        <p>{translations?.navbar?.contacto}</p>
     </div>
 </nav>
 
