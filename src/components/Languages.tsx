@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-const Languages = () => {
-    const [currentLanguage, setCurrentLanguage] = useState("");
-    const [open, setOpen] = useState(false);
 
+const Languages = (translations) => {
+    const [currentLanguage, setCurrentLanguage] = useState("es");
+    const [open, setOpen] = useState(false);
     useEffect(() => {
         if (typeof window !== "undefined") {
             setCurrentLanguage(window.location.pathname.startsWith("/en") ? "en" : "es");
@@ -20,7 +20,7 @@ const Languages = () => {
     return (
         <div className="idioma-container">
             <div className="btn-language" onClick={() => setOpen(!open)}>
-                <p className="principal">{currentLanguage === "es" ? "Español" : "English"}</p>
+                <p className="principal">{translations?.navbar?.idioma}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m6 9l6 6l6-6"></path>
                 </svg>
