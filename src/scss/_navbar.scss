@@ -317,7 +317,22 @@
         }
     }
 }
-
+.icon-navbar-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    transition: 0.3s;
+    background-color: #272d37;
+    svg {
+        color: white;
+    }
+    &:hover {
+        background-color: #3d4450;
+    }
+}
 
 @media (max-width: 769px) {
     .navbar1 {
