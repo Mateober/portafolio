@@ -1,5 +1,5 @@
 .extras {
-    background-color: #0e0c0c;
+    background-color: var(--extras-projectcard-skillsgroup-bg);
     height: 100%;
     width: 100%;
     display: flex;
@@ -7,6 +7,9 @@
     gap: 30px;
     padding: 20px;
     justify-content: space-between;
+    svg {
+        color: var(--extra-icon-color) !important;
+    }
     .extra-container {
         display: flex;
         flex-direction: column;
@@ -18,10 +21,10 @@
             p {
                 font-weight: 600;
                 font-size: 18px;
-                color: #fff;
+                color: var(--title-color);
             }
             .extra-icon {
-                color: #fff;
+                color:  var(--title-color);
                 width: 28px;
                 height: 28px;
             }
@@ -29,7 +32,7 @@
     }
 
     p {
-        color: #fff;
+        color:  var(--title-color);
         font-size: 16px;
         font-weight: 400;
     }
@@ -42,13 +45,16 @@
             font-weight: 600;
             padding: 3px 10px;
             border-radius: 9999px;
-            background-color: #3a3636;
-            border: solid 1px #4d4b4b;
+            background-color: var(--softskill-item-bg);
+            border: solid 1px var(--softskill-item-border);
+            color: var(--softskill-item-color);
         }
     }
     .hobbies {
         p {
-            background-color: #262424;
+            background-color: var(--hobby-item-bg);
+            color: var(-hobby-item-color);
+            border: solid 1px var(--hobby-item-border);
         }
     }
     .languages {

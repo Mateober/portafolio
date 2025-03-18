@@ -9,7 +9,7 @@
         .level-text {
             font-size: 24px;
             font-weight: 200;
-            color: #fff;
+            color: var(--title-color);
         }
 /*         .circle {
             width: 32px;
@@ -29,13 +29,13 @@
     .achievement {
         width: 268px;
         height: 70px;
-        background-color: #141010;
+        background-color: var(--level-bg);
         display: flex;
         align-items: center;
         gap: 10px;
         padding: 0 10px;
         .achievement-badge {
-            color: #fff;
+            color:  var(--badge-color);
             width: 54px;
             height: 54px;
         }
@@ -43,7 +43,7 @@
             .role-title {
                 font-size: 18px;
                 font-weight: 400;
-                color: #fff;
+                color:  var(--title-color);
             }
 /*             .years {
                 font-size: 12px;

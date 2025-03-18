@@ -5,7 +5,7 @@
     .profile-picture {
         width: 164px;
         height: 164px;
-        border: solid 2px #676767;
+        border: solid 2px var(--picture-border);
     }
     .profile-info {
         width: 100%;
@@ -20,7 +20,7 @@
             .profile-name {
                 font-size: 24px;
                 font-weight: 200;
-                color: #fff;
+                color: var(--title-color);
             }
             .profile-location {
                 display: flex;
@@ -33,14 +33,14 @@
                 .location-text {
                     font-size: 13px;
                     font-weight: 400;
-                    color: #c4c4c4;
+                    color: var(--text-color);
                 }
             }
         }
         .profile-description {
             font-size: 13px;
             font-weight: 400;
-            color: #c4c4c4;
+            color: var(--text-color);
         }
     }
 }
@@ -58,7 +58,7 @@
                 .profile-name {
                     font-size: 24px;
                     font-weight: 600;
-                    color: #fff;
+                    color: var(--title-color);
                 }
             }
         }

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #171d25;
+    background-color: var(--bg-navbar-footer);
 
     display: flex;
     flex-direction: column;
@@ -26,20 +26,20 @@
             align-items: center;
             cursor: pointer;
             .icon {
-                background-color: #8b929a;
+                background-color: var(--navbar-logo-bg);
                 border-radius: 100%;
                 transition: 0.3s;
                 path {
-                    fill: #171d25;
+                    fill: var(--bg-navbar-footer);
                 }
             }
 
             &:hover {
                 p {
-                    color: #fff;
+                    color:  var(--title-color);
                 }
                 .icon {
-                    background-color: #fff;
+                    background-color:  var(--title-color);
                 }
             }
         }
@@ -49,7 +49,7 @@
             transition: 0.3s;
 
             &:hover {
-                color: #fff;
+                color:  var(--title-color);
             }
         }
     }
@@ -58,7 +58,7 @@
         gap: 10px;
         align-items: center;
         .icon-container {
-            background-color: #272d37;
+            background-color: var(--navbar-buttons-bg);
             height: 100%;
             display: flex;
             align-items: center;
@@ -67,7 +67,7 @@
             cursor: pointer;
             transition: 0.3s;
             &:hover {
-                background-color: #3d4450;
+                background-color: var(--navbar-buttons-hover-bg);
             }
 
             .icon {
@@ -88,7 +88,7 @@
             display: flex;
             align-items: center;
             gap: 5px;
-            background-color: #272d37;
+            background-color: var(--navbar-buttons-bg);
             padding: 0 10px;
             cursor: default;
             .image {
@@ -107,7 +107,7 @@
         p {
             font-size: 20px;
             font-weight: 500;
-            color: #fff;
+            color:  var(--title-color);
             cursor: pointer;
             &:hover {
                 color: #cbcbcb;
@@ -121,7 +121,7 @@
     right: -100%;
     width: 100%;
     height: 100%;
-    background-color: #000000b5;
+    background-color: var(--navbar-mobile-fixed);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -134,7 +134,7 @@
         width: 10px;
         height: 10px;
     }
-    position: absolute;
+    
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -145,6 +145,7 @@
     right: -100%;
     transition: 0.3s;
     z-index: 9999;
+    position: fixed;
     /*         transform: translateX(100%);
     transition: transform 0.3s ease; */
     .mobile-header {
@@ -156,7 +157,7 @@
         .close {
             width: 30px;
             height: 30px;
-            background-color: #353c4568;
+            background-color: var(--navbar-mobile-close-btn-bg);
             border-radius: 9999px;
             svg {
                 padding: 6px;
@@ -171,7 +172,7 @@
             align-items: center;
             p {
                 font-size: 14px;
-                color: #fff;
+                color:  var(--title-color);
                 font-weight: 600;
             }
             .image {
@@ -204,7 +205,7 @@
             align-items: center;
             padding: 10px 30px;
             width: 100%;
-            background-color: #272d37;
+            background-color: var(--navbar-buttons-bg);
             cursor: pointer;
             transition: 0.3s;
             justify-content: center;
@@ -213,7 +214,7 @@
             p {
                 font-size: 16px;
                 font-weight: 500;
-                color: #fff;
+                color:  var(--title-color);
             }
             svg {
                 width: 25px;
@@ -238,8 +239,10 @@
     right: 0 !important;
 }
 .navbar-open2 {
+    position: absolute;
     right: 0 !important;
     transition: 0.3s;
+    display: block;
     /*     transform: translateX(0) !important;
     transition: transform 0.3s ease !important; */
 }
@@ -248,7 +251,7 @@
 }
 
 .idioma-container {
-    background-color: #272d37;
+    background-color: var(--navbar-buttons-bg);
     height: 100%;
     display: flex;
     align-items: center;
@@ -269,17 +272,17 @@
         p {
             font-size: 14px;
             font-weight: 400;
-            color: #fff;  
+            color:  var(--title-color);  
         }
     }
 
     &:hover {
-        background-color: #3d4450;
+        background-color: var(--navbar-buttons-hover-bg);
     }
 
     // Evita el hover cuando el cursor está sobre .idiomas
     &:has(.idiomas:hover) {
-        background-color: #272d37 !important;
+        background-color: var(--navbar-buttons-bg) !important;
     }
     .open {
         opacity: 1 !important;
@@ -289,7 +292,7 @@
     .idiomas {
         position: absolute;
         top: 120%;
-        background-color: #272d37;
+        background-color: var(--navbar-buttons-bg);
         width: 100%;
         border: 1px solid rgb(53, 53, 53);
         opacity: 0;
@@ -313,7 +316,7 @@
             font-size: 14px;
             font-weight: 400;
             padding: 20px 0 20px 10px;
-            color: #fff;          
+            color:  var(--title-color);          
         }
     }
 }
@@ -325,12 +328,12 @@
     width: 34px;
     height: 34px;
     transition: 0.3s;
-    background-color: #272d37;
+    background-color: var(--navbar-buttons-bg);
     svg {
         color: white;
     }
     &:hover {
-        background-color: #3d4450;
+        background-color: var(--navbar-buttons-hover-bg);
     }
 }
 

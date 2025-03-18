@@ -1,15 +1,15 @@
 .projects {
     width: 100%;
     //max-width: 70%;
-    background-color: #141111;
+    background-color: var(--projects-skills-bg);
     border-radius: 5px;
     .projects-title {
-        background-color: #090808;
+        background-color: var(--projects-skills-projects-title);
         padding: 11px 20px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         p {
-            color: #fff;
+            color:  var(--title-color);
             font-size: 25px;
             font-weight: 500;
             display: inline;
@@ -23,7 +23,7 @@
             gap: 40px;
             .project-card {
                 display: flex;
-                background-color: #0e0c0c;
+                background-color: var(--extras-projectcard-skillsgroup-bg);
                 padding: 20px 10px;
                 gap: 30px;
                 .project-img-container {
@@ -54,7 +54,7 @@
                         p {
                             font-size: 24px;
                             font-weight: 500;
-                            color: #fff;
+                            color:  var(--title-color);
                         }
                         .project-tags {
                             display: flex;
@@ -67,7 +67,8 @@
                             color: #008efb;
                             background-color: #171f2f;
                             padding: 5px 10px;
-                            border-radius: 30px;display: flex;
+                            border-radius: 30px;
+                            display: flex;
                             align-items: center;
                             justify-content: center;
                             text-align: center;
@@ -92,7 +93,7 @@
                         flex-wrap: wrap;
                         gap: 5px 10px;
                         p {
-                            background-color: #2a2a2a;
+                            background-color: var(--projects-techitem-btn-bg);
                             padding: 5px 10px;
                             border-radius: 20px;
                             color: #d1d5db;
@@ -105,10 +106,10 @@
                         flex-direction: row;
                         gap: 20px;
                         .btn {
-                            background-color: #2a2a2a;
+                            background-color: var(--projects-techitem-btn-bg);
                             font-size: 16px;
                             font-weight: 400;
-                            color: #fff;
+                            color:  var(--title-color);
                             padding: 10px 20px;
                             border-radius: 10px;
                             display: flex;
@@ -118,7 +119,7 @@
                             transition: 0.3s;
                             &:not(.btn-disable):hover {
                                 transform: scale(1.1);
-                                background-color: #3e3e3e;
+                                background-color: var(--projects-btn-disabled-bg);
                             }
                         }
                         .btn-disable {
@@ -136,7 +137,7 @@
     display: none !important;
 }
 
-@media (max-width: 976px) { 
+@media (max-width: 976px) {
     .projects {
         .projects-list {
             .projects-group {
@@ -148,7 +149,6 @@
                         display: none;
                     }
                     .project-info {
-                    
                         .project-header {
                             flex-direction: column;
                             gap: 10px;
