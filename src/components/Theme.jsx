@@ -9,15 +9,12 @@ export default function Theme() {
 
     const [isDark, setIsDark] = useState(getInitialTheme);
 
-    useEffect(() => {
-        document.documentElement.classList.toggle('theme-dark', isDark);
-        document.documentElement.classList.toggle('theme-light', !isDark);
-    }, [isDark]);
-
     const toggleTheme = () => {
         setIsDark((prev) => {
             const newTheme = !prev;
             localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+            document.documentElement.classList.toggle('theme-dark', newTheme);
+            document.documentElement.classList.toggle('theme-light', !newTheme);
             return newTheme;
         });
     };
