@@ -1,27 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Theme = (translations) => {
-    const [currentTheme, setCurrentTheme] = useState('es');
-    const [open, setOpen] = useState(false);
-    
+export default function Theme() {
+    const getInitialTheme = () => {
+        if (typeof window === 'undefined') return false;
+        const storedTheme = localStorage.getItem('theme');
+        return storedTheme ? storedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    };
+
+    const [isDark, setIsDark] = useState(getInitialTheme);
+
     useEffect(() => {
+        document.documentElement.classList.toggle('theme-dark', isDark);
+        document.documentElement.classList.toggle('theme-light', !isDark);
+    }, [isDark]);
 
-    }, []);
-
-    const onClickTheme = (theme) => {
-
+    const toggleTheme = () => {
+        setIsDark((prev) => {
+            const newTheme = !prev;
+            localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+            return newTheme;
+        });
     };
 
     return (
-        <div class="icon-navbar-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <path d="M12 3v1m0 16v1m-9-9h1m16 0h1m-2.636-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707"></path>
-                </g>
-            </svg>
+        <div className="icon-navbar-container" onClick={toggleTheme} style={{ cursor: 'pointer' }}>
+            {isDark ? <SunIcon /> : <MoonIcon />}
         </div>
     );
-};
+}
 
-export default Theme;
+const SunIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 3v1m0 16v1m-9-9h1m16 0h1m-2.636-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707"></path>
+        </g>
+    </svg>
+);
+
+const MoonIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path>
+    </svg>
+);

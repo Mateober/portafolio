@@ -8,7 +8,7 @@ import translations from '../i18n/es.json';
 ---
 
 <!doctype html>
-<html lang="es" class="theme-dark">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -87,14 +87,24 @@ import translations from '../i18n/es.json';
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet" />
         <title>Portafolio - Mateo Bertello</title>
+        <script>
+            (function () {
+                const storedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isDark = storedTheme === 'dark' || (!storedTheme && prefersDark);
+
+                document.documentElement.classList.toggle('theme-dark', isDark);
+                document.documentElement.classList.toggle('theme-light', !isDark);
+            })();
+        </script>
     </head>
     <body>
-        <Navbar translations={translations}/>
+        <Navbar translations={translations} />
 
         <main class="home">
             <Grid translations={translations} />
         </main>
 
-        <Footer translations={translations}/>
+        <Footer translations={translations} />
     </body>
 </html>
