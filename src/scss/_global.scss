@@ -146,7 +146,27 @@ body {
     --extra-icon-color: #fff;
     --badge-color: #fff;
     --picture-border: #676767;
-}
+    --icon-skill-color: #fff;
+    --navbar-text-color: #fff;
+    --navbariconcolor: #fff;
+    --idiomas-border: #353535;
+    --profile-color-text: #a2a9b2;
+    --navbar-text-hover: #cbcbcb;
+    --skills-bg: #141111;
+    --tag-bg: #171f2f;
+    --tag-color: #008efb; 
+    --tag-orange-bg: #2a1e12;
+    --tag-orange-color: #f97316;
+    --tag-green-bg: #182a24;
+    --tag-green-color: #10b981;
+    --btn-project-bg: #2A2A2A;
+    --btn-project-color: #fff;
+    --btn-project-hover: #3e3e3e;
+    //--btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
+    --project-text-color: #9ca3af;
+    --project-technologies-bg: #2a2a2a;
+    --project-technologies-color: #d1d5db;
+}   
 
 .theme-light {
     --bg-navbar-footer: #e2e8f0;
@@ -167,8 +187,8 @@ body {
     --skill-icon-bg: #bfbfbf62;
     --skill-tooltip-bg: #1e293b;
     --navbar-logo-bg: #1e293b;
-    --navbar-buttons-bg: #e2e8f0;
-    --navbar-buttons-hover-bg: #cbd5e1;
+    --navbar-buttons-bg: #fff;
+    --navbar-buttons-hover-bg: #71b1ff;
     --navbar-mobile-fixed: #ffffffcc;
     --navbar-mobile-bg: #f1f5f9;
     --navbar-mobile-close-btn-bg: #d1d5db68;
@@ -183,5 +203,24 @@ body {
     --hobby-item-border: #fff;
     --extra-icon-color: #1d4ed8;
     --badge-color: #1d4ed8;
-    --picture-border: #E2E8F0;
+    --picture-border: #e2e8f0;
+    --icon-skill-color: #000000;
+    --navbar-text-color: #000000;
+    --navbariconcolor: #000000;
+    --idiomas-border: #e2e8f0;
+    --profile-color-text: #000000;
+    --navbar-text-hover: #1D4ED8;
+    --skills-bg: #f1f1f1;
+    --tag-bg: #1D4ED8;
+    --tag-color: #fff; 
+    --tag-orange-bg: #D97706;
+    --tag-orange-color: #fff;
+    --tag-green-bg: #10b981;
+    --tag-green-color: #fff;
+    --btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
+    --btn-project-hover: linear-gradient(to right, #15a9d0, #1763c8);
+    --btn-project-color: #fff;
+    --project-text-color: #74777c;
+    --project-technologies-bg: #E2E8F0;
+    --project-technologies-color: #334159;
 }
