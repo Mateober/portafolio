@@ -15,6 +15,9 @@ export default function Theme() {
             localStorage.setItem('theme', newTheme ? 'dark' : 'light');
             document.documentElement.classList.toggle('theme-dark', newTheme);
             document.documentElement.classList.toggle('theme-light', !newTheme);
+
+            document.body.classList.toggle('body-dark', newTheme);
+            document.body.classList.toggle('body-light', !newTheme);
             return newTheme;
         });
     };

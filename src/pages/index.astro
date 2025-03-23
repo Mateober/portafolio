@@ -95,6 +95,9 @@ import translations from '../i18n/es.json';
 
                 document.documentElement.classList.toggle('theme-dark', isDark);
                 document.documentElement.classList.toggle('theme-light', !isDark);
+
+                document.body.classList.toggle('body-dark', isDark);
+                document.body.classList.toggle('body-light', !isDark);
             })();
         </script>
     </head>

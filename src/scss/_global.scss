@@ -23,10 +23,15 @@ a {
     display: none;
 }
 
-body {
-    /*  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, black 100%),
-        url('https://steamuserimages-a.akamaihd.net/ugc/792007521116448905/F7A121A3F7A929FFB4DBC3AE241B3B4B6EAAED1D/') no-repeat center top; */
+.body-dark {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, black 100%),
+        url('https://steamuserimages-a.akamaihd.net/ugc/792007521116448905/F7A121A3F7A929FFB4DBC3AE241B3B4B6EAAED1D/') no-repeat center top;
     background-color: var(--body-bg);
+}
+.body-light {
+    background-image: repeating-linear-gradient(45deg, #1d4ed8 0, #1d4ed8 2px, transparent 0, transparent 50%);
+    background-size: 78px 78px;
+    background-color: #f2f3f5;
 }
 
 .home {
@@ -112,102 +117,104 @@ body {
 }
 
 .theme-dark {
-    --bg-navbar-footer: #171d25;
-    --bg-quote: #1e293b;
-    --footer-line-borderquote: #334155;
-    --footer-text: #cbd5e1;
-    --color-blue-hover: #60a5fa;
-    --footer-bottom-text: #94a3b8;
     --body-bg: #000000;
-    --home-bg: #1e1717;
-    --level-bg: #141010;
-    --extras-projectcard-skillsgroup-bg: #0e0c0c;
-    --soft-skill-item-bg: #070202;
-    --projects-skills-bg: #141111;
-    --projects-skills-projects-title: #090808;
-    --projects-techitem-btn-bg: #2a2a2a;
-    --projects-btn-disabled-bg: #3e3e3e;
-    --skill-icon-bg: #3c393962;
-    --skill-tooltip-bg: #c2c2c2;
-    --navbar-logo-bg: #8b929a;
-    --navbar-buttons-bg: #272d37;
-    --navbar-buttons-hover-bg: #3d4450;
     --navbar-mobile-fixed: #000000b5;
-    --navbar-mobile-bg: #222222;
-    --navbar-mobile-close-btn-bg: #353c4568;
-    --title-color: #fff;
-    --text-color: #c4c4c4;
-    --text-extras: #c4c4c4;
-    --softskill-item-bg: #3a3636;
-    --softskill-item-border: #4d4b4b;
-    --hobby-item-bg: #262424;
-    --picture-border: #676767;
-    --idiomas-border: #353535;
-    --profile-color-text: #a2a9b2;
-    --navbar-text-hover: #cbcbcb;
+    --projects-skills-projects-title: #090808;
+    --soft-skill-item-bg: #070202;
+    --extras-projectcard-skillsgroup-bg: #=;
+    --level-bg: #141010;
+    --projects-skills-bg: #141111;
     --skills-bg: #141111;
     --tag-bg: #171f2f;
-    --tag-color: #008efb; 
+    --bg-navbar-footer: #171d25;
+    --home-bg: #1e1717;
+    --bg-quote: #1e293b;
     --tag-orange-bg: #2a1e12;
-    --tag-orange-color: #f97316;
     --tag-green-bg: #182a24;
-    --tag-green-color: #10b981;
+    --navbar-mobile-bg: #222222;
+    --hobby-item-bg: #262424;
+    --navbar-buttons-bg: #272d37;
+    --projects-techitem-btn-bg: #2a2a2a;
     --btn-project-bg: #2a2a2a;
-    --btn-project-hover: #3e3e3e;
-    --project-text-color: #9ca3af;
     --project-technologies-bg: #2a2a2a;
+    --tag-orange-color: #f97316;
+    --btn-project-hover: #3e3e3e;
+    --projects-btn-disabled-bg: #3e3e3e;
+    --softskill-item-bg: #3a3636;
+    --softskill-item-border: #4d4b4b;
+    --navbar-buttons-hover-bg: #3d4450;
+    --navbar-mobile-close-btn-bg: #353c4568;
+    --idiomas-border: #353535;
+    --footer-line-borderquote: #334155;
+    --picture-border: #676767;
+    --navbar-logo-bg: #8b929a;
+    --profile-color-text: #a2a9b2;
+    --project-text-color: #9ca3af;
+    --footer-bottom-text: #94a3b8;
+    --footer-text: #cbd5e1;
     --project-technologies-color: #d1d5db;
+    --skill-tooltip-bg: #c2c2c2;
+    --color-blue-hover: #60a5fa;
+    --tag-color: #008efb;
+    --navbar-text-hover: #cbcbcb;
+    --tag-green-color: #10b981;
+    --text-color: #c4c4c4;
+    --text-extras: #c4c4c4;
     --white-blue: #fff;
     --white-black: #fff;
-}   
+    --title-color: #fff;
+    --skill-icon-bg: #201D1D;
+    --black-white: #000000;
+}
 
 .theme-light {
-    --bg-navbar-footer: #e2e8f0;
-    --bg-quote: #c3ddff;
-    --footer-line-borderquote: #cbd5e1;
+    --profile-color-text: #000000;
+    --white-black: #000000;
     --footer-text: #1e293b;
-    --color-blue-hover: #2563eb;
-    --footer-bottom-text: #64748b;
-    --body-bg: #f2f3f5;
-    --home-bg: #f9fafb;
-    --level-bg: #eff6ff;
-    --extras-projectcard-skillsgroup-bg: #ffffff;
-    --soft-skill-item-bg: #e2e8f0;
-    --projects-skills-bg: #f8f7f7;
-    --projects-skills-projects-title: #e2e8f0;
-    --projects-techitem-btn-bg: #e5e7eb;
-    --projects-btn-disabled-bg: #d1d5db;
-    --skill-icon-bg: #bfbfbf62;
-    --skill-tooltip-bg: #1e293b;
     --navbar-logo-bg: #1e293b;
-    --navbar-buttons-bg: #fff;
-    --navbar-buttons-hover-bg: #71b1ff;
-    --navbar-mobile-fixed: #ffffffcc;
-    --navbar-mobile-bg: #f1f5f9;
-    --navbar-mobile-close-btn-bg: #d1d5db68;
+    --skill-tooltip-bg: #1d4ed8;
     --title-color: #1f2937;
     --text-color: #374151;
-    --text-extras: #1d4ed8;
-    --softskill-item-bg: #dfedff;
-    --softskill-item-border: #fff;
-    --hobby-item-bg: #eff6ff;
-    --hobby-item-border: #fff;
-    --picture-border: #e2e8f0;
-    --idiomas-border: #e2e8f0;
-    --profile-color-text: #000000;
-    --navbar-text-hover: #1D4ED8;
-    --skills-bg: #f1f1f1;
-    --tag-bg: #1D4ED8;
-    --tag-color: #fff; 
-    --tag-orange-bg: #D97706;
-    --tag-orange-color: #fff;
-    --tag-green-bg: #10b981;
-    --tag-green-color: #fff;
-    --btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
-    --btn-project-hover: linear-gradient(to right, #15a9d0, #1763c8);
-    --project-text-color: #74777c;
-    --project-technologies-bg: #E2E8F0;
     --project-technologies-color: #334159;
+    --footer-bottom-text: #64748b;
     --white-blue: #1d4ed8;
-    --white-black: #000000;
+    --navbar-text-hover: #1d4ed8;
+    --tag-bg: #1d4ed8;
+    --text-extras: #1d4ed8;
+    --color-blue-hover: #2563eb;
+    --tag-green-bg: #10b981;
+    --tag-orange-bg: #d97706;
+    --btn-project-hover: linear-gradient(to right, #15a9d0, #1763c8);
+    --btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
+    --project-text-color: #74777c;
+    --projects-btn-disabled-bg: #d1d5db;
+    --navbar-mobile-close-btn-bg: #d1d5db68;
+    --projects-techitem-btn-bg: #e5e7eb;
+    --bg-navbar-footer: #e2e8f0;
+    --projects-skills-projects-title: #e2e8f0;
+    --idiomas-border: #e2e8f0;
+    --picture-border: #e2e8f0;
+    --soft-skill-item-bg: #e2e8f0;
+    --project-technologies-bg: #e2e8f0;
+    --footer-line-borderquote: #cbd5e1;
+    --bg-quote: #c3ddff;
+    --softskill-item-bg: #dfedff;
+    --hobby-item-bg: #eff6ff;
+    --level-bg: #eff6ff;
+    --skills-bg: #f1f1f1;
+    --navbar-mobile-bg: #f1f5f9;
+    --body-bg: #f2f3f5;
+    --projects-skills-bg: #f8f7f7;
+    --home-bg: #f9fafb;
+    --navbar-mobile-fixed: #ffffffcc;
+    --navbar-buttons-bg: #fff;
+    --extras-projectcard-skillsgroup-bg: #fff;
+    --softskill-item-border: #fff;
+    --hobby-item-border: #fff;
+    --tag-color: #fff;
+    --tag-orange-color: #fff;
+    --tag-green-color: #fff;
+    --skill-icon-bg: #E6E6E6;
+    --black-white: #fff;
+    --navbar-buttons-hover-bg: #ededed;
 }
