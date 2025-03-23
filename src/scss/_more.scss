@@ -8,7 +8,7 @@
     padding: 20px;
     justify-content: space-between;
     svg {
-        color: var(--extra-icon-color) !important;
+        color: var(--white-blue) !important;
     }
     .extra-container {
         display: flex;
@@ -47,7 +47,7 @@
             border-radius: 9999px;
             background-color: var(--softskill-item-bg);
             border: solid 1px var(--softskill-item-border);
-            color: var(--softskill-item-color);
+            color: var(--white-blue);
         }
     }
     .hobbies {

@@ -140,15 +140,8 @@ body {
     --text-extras: #c4c4c4;
     --softskill-item-bg: #3a3636;
     --softskill-item-border: #4d4b4b;
-    --softskill-item-color: #fff;
     --hobby-item-bg: #262424;
-    --hobby-item-color: #fff;
-    --extra-icon-color: #fff;
-    --badge-color: #fff;
     --picture-border: #676767;
-    --icon-skill-color: #fff;
-    --navbar-text-color: #fff;
-    --navbariconcolor: #fff;
     --idiomas-border: #353535;
     --profile-color-text: #a2a9b2;
     --navbar-text-hover: #cbcbcb;
@@ -159,18 +152,18 @@ body {
     --tag-orange-color: #f97316;
     --tag-green-bg: #182a24;
     --tag-green-color: #10b981;
-    --btn-project-bg: #2A2A2A;
-    --btn-project-color: #fff;
+    --btn-project-bg: #2a2a2a;
     --btn-project-hover: #3e3e3e;
-    //--btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
     --project-text-color: #9ca3af;
     --project-technologies-bg: #2a2a2a;
     --project-technologies-color: #d1d5db;
+    --white-blue: #fff;
+    --white-black: #fff;
 }   
 
 .theme-light {
     --bg-navbar-footer: #e2e8f0;
-    --bg-quote: #a6c1e5;
+    --bg-quote: #c3ddff;
     --footer-line-borderquote: #cbd5e1;
     --footer-text: #1e293b;
     --color-blue-hover: #2563eb;
@@ -197,16 +190,9 @@ body {
     --text-extras: #1d4ed8;
     --softskill-item-bg: #dfedff;
     --softskill-item-border: #fff;
-    --softskill-item-color: #1d4ed8;
     --hobby-item-bg: #eff6ff;
-    --hobby-item-color: #1d4ed8;
     --hobby-item-border: #fff;
-    --extra-icon-color: #1d4ed8;
-    --badge-color: #1d4ed8;
     --picture-border: #e2e8f0;
-    --icon-skill-color: #000000;
-    --navbar-text-color: #000000;
-    --navbariconcolor: #000000;
     --idiomas-border: #e2e8f0;
     --profile-color-text: #000000;
     --navbar-text-hover: #1D4ED8;
@@ -219,8 +205,9 @@ body {
     --tag-green-color: #fff;
     --btn-project-bg: linear-gradient(to right, #18c1e8, #1a73e8);
     --btn-project-hover: linear-gradient(to right, #15a9d0, #1763c8);
-    --btn-project-color: #fff;
     --project-text-color: #74777c;
     --project-technologies-bg: #E2E8F0;
     --project-technologies-color: #334159;
+    --white-blue: #1d4ed8;
+    --white-black: #000000;
 }

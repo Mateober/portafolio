@@ -181,7 +181,7 @@
             align-items: center;
             p {
                 font-size: 14px;
-                color: var(--title-color);
+                color: #fff;
                 font-weight: 600;
             }
             .image {
@@ -196,6 +196,7 @@
         flex-direction: column;
         gap: 30px;
         padding-top: 30px;
+        padding-bottom: 30px;
         p {
             font-size: 18px;
             font-weight: 500;
@@ -344,19 +345,19 @@
 }
 .navbariconcolor {
     path {
-        fill: var(--navbariconcolor) !important;
+        fill: var(--white-black) !important;
     }
 }
 
 .arrow-language {
     path {
-        stroke: var(--navbariconcolor) !important;
+        stroke: var(--white-black) !important;
     }
 }
 
 .moon-icon {
     path {
-        stroke: var(--navbariconcolor) !important;
+        stroke: var(--white-black) !important;
     }
 }
 
