@@ -84,6 +84,9 @@ footer {
                 svg {
                     width: 23px;
                     height: 23px;
+                    path {
+                        fill: var(--white-black)
+                    }
                 }
             }
         }
