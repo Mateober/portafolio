@@ -12,8 +12,51 @@ import translations from '../../i18n/en.json';
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet" />
-        <title>Portafolio - Mateo Bertello</title>
+        <meta name="description" content="Portfolio of Mateo Bertello. Web developer with experience in creating modern and optimized interfaces." />
+        <meta name="keywords" content="Mateo Bertello, web developer, portfolio, frontend, backend" />
+        <meta name="author" content="Mateo Bertello" />
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="Portfolio - Mateo Bertello" />
+        <meta property="og:description" content="Explore my web development projects" />
+        <!-- <meta property="og:image" content="YOUR_PREVIEW_IMAGE_URL" /> -->
+        <meta property="og:url" content="https://mateobertello.com" />
+        <meta property="og:type" content="website" />
+
+        <!-- Twitter Meta -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Portfolio - Mateo Bertello" />
+        <meta name="twitter:description" content="Explore my web development projects" />
+        <!-- <meta name="twitter:image" content="YOUR_PREVIEW_IMAGE_URL" /> -->
+
+        <!-- Favicon -->
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" /> -->
+
+        <!-- Schema.org Markup -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Mateo Bertello",
+                "jobTitle": "Web Developer",
+                "description": "Portfolio of Mateo Bertello. Web developer with experience in creating modern and optimized interfaces.",
+                "email": "mateob.dev@gmail.com",
+                "url": "https://mateobertello.com",
+                "sameAs": ["https://github.com/Mateober", "https://www.linkedin.com/in/mateo-bertello/"]
+            }
+        </script>
+
+        <!-- Sitemap -->
+        <link rel="sitemap" href="/sitemap-index.xml" />
+        <link rel="canonical" href="https://mateobertello.com/" />
+
+        <!-- Title -->
+        <title>Portfolio - Mateo Bertello</title>
+
+        <!-- Theme -->
         <script>
             (function () {
                 const storedTheme = localStorage.getItem('theme');
