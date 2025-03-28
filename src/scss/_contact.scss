@@ -1,5 +1,5 @@
 .contact {
-    background-color: #141111;
+    background-color: var(--contact-bg);
     padding: 40px;
     .contact-title {
         border-top-left-radius: 5px;
@@ -11,7 +11,7 @@
             font-size: 35px;
             font-weight: 600;
             display: inline;
-            border-bottom: #66c0f4 2px solid;
+            border-bottom: var(--contact-item-color) 2px solid;
             padding-bottom: 4px;
         }
     }
@@ -24,8 +24,8 @@
     }
 
     .contact-item {
-        color: white;
-        background-color: #262626;
+        color: var(--white-black);
+        background-color: var(--contact-item-bg);
         border-radius: 10px;
         padding: 15px;
         display: flex;
@@ -34,16 +34,16 @@
         cursor: pointer;
         transition: all 0.3s ease;
         &:hover {
-            background: #ffffff33;
+            background: var(--contact-item-hover-bg);
             transform: translateY(-5px);
         }
         svg {
             width: 22px;
             height: 22px;
-            color: #66c0f4;
+            color: var(--contact-item-color);
         }
         g {
-            stroke: #66c0f4;
+            stroke: var(--contact-item-color);
         }
         .contact-data {
             display: flex;
@@ -52,7 +52,7 @@
         }
         .contact-asc {
             font-size: 16px;
-            color: #66c0f4;
+            color: var(--contact-item-color);
         }
         .contact-desc {
             opacity: 0.8;
@@ -91,5 +91,16 @@
     .contact-item:hover .tooltip {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact {
+        .container-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
     }
 }

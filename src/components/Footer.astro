@@ -52,3 +52,32 @@ const { translations } = Astro.props;
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const emailContainer = document.getElementById('emailContainer');
+      const tooltip = document.getElementById('tooltip');
+      const emailText = document.getElementById('emailText');
+  
+      if (emailContainer && tooltip && emailText) {
+        emailContainer.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(emailText.textContent || '');
+            tooltip.textContent = 'Copiado!';
+            
+            // Cambiar de nuevo después de 2 segundos
+            setTimeout(() => {
+              tooltip.textContent = 'Copiar';
+            }, 2000);
+          } catch (err) {
+            console.error('Error al copiar el texto: ', err);
+            tooltip.textContent = 'Error al copiar';
+            
+            setTimeout(() => {
+              tooltip.textContent = 'Copiar';
+            }, 2000);
+          }
+        });
+      }
+    });
+  </script>

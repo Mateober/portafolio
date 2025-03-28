@@ -4,21 +4,20 @@
     </div>
 
     <div class="container-grid">
-        <div class="email-container">
-            <div class="contact-item" id="emailContainer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                        <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                    </g>
-                </svg>
-                <div class="contact-data">
-                    <p class="contact-asc">Email</p>
-                    <p class="contact-desc" id="emailText">mateob.dev@gmail.com</p>
-                </div>
-                <div class="tooltip" id="tooltip">Copiar</div>
+        <div class="contact-item" id="emailContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </g>
+            </svg>
+            <div class="contact-data">
+                <p class="contact-asc">Email</p>
+                <p class="contact-desc" id="emailText">mateob.dev@gmail.com</p>
             </div>
+            <div class="tooltip" id="tooltip">Copiar</div>
         </div>
+
         <a class="contact-item" href="https://www.linkedin.com/in/mateo-bertello" target="_blank">
             <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,29 +58,29 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const emailContainer = document.getElementById('emailContainer');
-      const tooltip = document.getElementById('tooltip');
-      const emailText = document.getElementById('emailText');
-  
-      if (emailContainer && tooltip && emailText) {
-        emailContainer.addEventListener('click', async () => {
-          try {
-            await navigator.clipboard.writeText(emailText.textContent || '');
-            tooltip.textContent = 'Copiado!';
-            
-            // Cambiar de nuevo después de 2 segundos
-            setTimeout(() => {
-              tooltip.textContent = 'Copiar';
-            }, 2000);
-          } catch (err) {
-            console.error('Error al copiar el texto: ', err);
-            tooltip.textContent = 'Error al copiar';
-            
-            setTimeout(() => {
-              tooltip.textContent = 'Copiar';
-            }, 2000);
-          }
-        });
-      }
+        const emailContainer = document.getElementById('emailContainer');
+        const tooltip = document.getElementById('tooltip');
+        const emailText = document.getElementById('emailText');
+
+        if (emailContainer && tooltip && emailText) {
+            emailContainer.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(emailText.textContent || '');
+                    tooltip.textContent = 'Copiado!';
+
+                    // Cambiar de nuevo después de 2 segundos
+                    setTimeout(() => {
+                        tooltip.textContent = 'Copiar';
+                    }, 2000);
+                } catch (err) {
+                    console.error('Error al copiar el texto: ', err);
+                    tooltip.textContent = 'Error al copiar';
+
+                    setTimeout(() => {
+                        tooltip.textContent = 'Copiar';
+                    }, 2000);
+                }
+            });
+        }
     });
-  </script>
+</script>
