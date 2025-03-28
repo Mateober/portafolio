@@ -74,6 +74,10 @@ a {
     grid-column: span 3;
     grid-row-start: 3;
 }
+.div-contact {
+    grid-column: span 3;
+    grid-row-start: 4;
+}
 
 @media (max-width: 990px) {
     .div-skills {
@@ -88,6 +92,9 @@ a {
 
     .div-projects {
         grid-row-start: 4;
+    }
+    .div-contact {
+        grid-row-start: 5;
     }
 }
 
@@ -113,6 +120,9 @@ a {
 
     .div-projects {
         grid-row-start: 5;
+    }
+    .div-contact {
+        grid-row-start: 6;
     }
 }
 
@@ -204,7 +214,7 @@ a {
     --skills-bg: #f1f1f1;
     --navbar-mobile-bg: #f1f5f9;
     --body-bg: #f2f3f5;
-    --projects-skills-bg: #f8f7f7;
+    --projects-skills-bg: #F1F1F1;
     --home-bg: #f9fafb;
     --navbar-mobile-fixed: #ffffffcc;
     --navbar-buttons-bg: #fff;
@@ -214,7 +224,7 @@ a {
     --tag-color: #fff;
     --tag-orange-color: #fff;
     --tag-green-color: #fff;
-    --skill-icon-bg: #E6E6E6;
+    --skill-icon-bg: #F1F1F1;
     --black-white: #fff;
     --navbar-buttons-hover-bg: #ededed;
 }

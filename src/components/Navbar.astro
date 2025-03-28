@@ -2,6 +2,7 @@
 const { translations } = Astro.props;
 import Languages from './Languages';
 import Theme from './Theme.jsx';
+import Nav from './Nav.jsx';
 ---
 
 <nav class="navbar">
@@ -68,7 +69,7 @@ import Theme from './Theme.jsx';
                 </svg>
             </div>
             <Languages {...translations} client:visible />
-            <Theme client:only="react"/>
+            <Theme client:only="react" />
             <!--             <div class="icon-navbar-container">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     ><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -83,7 +84,7 @@ import Theme from './Theme.jsx';
                     ></svg
                 >
             </div> -->
-<!--             <div class="icon-navbar-container">
+            <!--             <div class="icon-navbar-container">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     ><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path></svg
                 >
@@ -130,11 +131,7 @@ import Theme from './Theme.jsx';
             </div>
         </div>
     </div>
-    <div class="navbar2">
-        <p>{translations?.navbar?.inicio}</p>
-        <p>{translations?.navbar?.proyectos}</p>
-        <p>{translations?.navbar?.contacto}</p>
-    </div>
+    <div class="navbar2"> <Nav  client:only="react" {...translations}/></div>
 </nav>
 
 <script is:inline>

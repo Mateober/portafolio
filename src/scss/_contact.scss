@@ -1,0 +1,95 @@
+.contact {
+    background-color: #141111;
+    padding: 40px;
+    .contact-title {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        text-align: center;
+        padding-bottom: 40px;
+        p {
+            color: var(--title-color);
+            font-size: 35px;
+            font-weight: 600;
+            display: inline;
+            border-bottom: #66c0f4 2px solid;
+            padding-bottom: 4px;
+        }
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        color: white;
+        background-color: #262626;
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            background: #ffffff33;
+            transform: translateY(-5px);
+        }
+        svg {
+            width: 22px;
+            height: 22px;
+            color: #66c0f4;
+        }
+        g {
+            stroke: #66c0f4;
+        }
+        .contact-data {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .contact-asc {
+            font-size: 16px;
+            color: #66c0f4;
+        }
+        .contact-desc {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+    }
+
+    .tooltip {
+        position: absolute;
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    .tooltip::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+    }
+
+    .contact-item:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+}
