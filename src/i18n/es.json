@@ -56,22 +56,17 @@
             {
                 "title": "Futbolar",
                 "subtitle": "Proyecto Real",
-                "description": "Futbolar es una plataforma web para fanáticos del fútbol en Argentina, con más de 200 usuarios. Los usuarios pueden enivar mensajes en tiempo real en foros dedicados a las distintas divisiones del fútbol argentino, fomentando el debate y la comunidad. La plataforma permite a los usuarios elegir sus equipos favoritos y personalizar su perfil. Además, cuenta con un sistema de moderación con roles de moderador y administrador, asegurando un entorno seguro y ordenado. También incluye un panel de administración para gestionar divisiones y equipos, facilitando la organización del contenido. Desarrollé tanto el frontend como el backend de la plataforma.",
-                "skills": [
-                    "ReactJS",
-                    "Vite",
-                    "Redux",
-                    "Sass",
-                    "Axios",
-                    "React Router",
-                    "Node.js",
-                    "PostgreSQL",
-                    "Sequelize",
-                    "Redis",
-                    "Socket.IO",
-                    "Google OAuth",
-                    "Mercado Pago Checkout Pro"
+                "description": "Desarrollé una plataforma web de foros en tiempo real para fanáticos del fútbol argentino, con más de 200 usuarios registrados.",
+                "works": [
+                    "Implementé el frontend con React.js y el backend con Node.js, Express y Sequelize, utilizando PostgreSQL como base de datos.",
+                    "Optimicé el rendimiento utilizando Redis para cachear sesiones y acelerar las solicitudes.",
+                    "Implementé Socket.io para habilitar la mensajería en tiempo real.",
+                    "Integré Google OAuth para el registro de usuarios.",
+                    "Integré Mercado Pago Checkout Pro para procesar donaciones y gestionar beneficios.",
+                    "Configuré y gestioné un VPS completo (frontend, backend, base de datos y Redis), asegurando su seguridad y rendimiento.",
+                    "Mejoré el SEO y configuré herramientas de análisis como Google Analytics y Microsoft Clarity."
                 ],
+                "skills": ["ReactJS", "Vite", "Redux", "Sass", "Axios", "React Router", "Node.js", "PostgreSQL", "Sequelize", "Redis", "Socket.IO", "Google OAuth", "Mercado Pago Checkout Pro"],
                 "demo": "https://futbolar.com.ar",
                 "code": null,
                 "img1": "/10.png",
@@ -82,7 +77,11 @@
             {
                 "title": "Jardín de Infantes SOL",
                 "subtitle": "Proyecto Real",
-                "description": "Este proyecto es una landing page diseñada para el Jardín de Infantes SOL, una institución educativa enfocada en la educación inicial de los niños y niñas. La página ofrece información detallada sobre la institución, una galería de fotos y una sección de contacto para facilitar la comunicación, brindando una experiencia clara y accesible para las familias interesadas.",
+                "description": "Desarrollé y diseñé una landing page optimizada para un jardín de infantes utilizando Astro.",
+                "works": [
+                    "Implementé un SEO avanzado, cuidando la estructura, metadatos y optimización de carga.",
+                    "Añadí herramientas de seguimiento como Google Analytics y Microsoft Clarity para analizar el comportamiento de los visitantes."
+                ],
                 "skills": ["Astro", "Sass"],
                 "demo": "https://jardinsolrosario.com.ar",
                 "code": null,
@@ -94,7 +93,8 @@
             {
                 "title": "MovieApp",
                 "subtitle": "Proyecto de Practica",
-                "description": "MovieApp es una aplicación web que permite a los usuarios buscar información sobre películas y programas de televisión. Utiliza la API de The Movie Database (TMDb) para obtener datos actualizados, incluyendo detalles de la trama, calificaciones, elenco y más. Los usuarios pueden realizar búsquedas, ver detalles de películas y programas de televisión",
+                "description": "Creé una aplicación web con React.js que consume la API de TMDb, permitiendo buscar y visualizar detalles actualizados de películas y programas de TV.",
+                "works": ["Diseñé la interfaz y la experiencia de usuario.", "Implementé la lógica para gestionar las solicitudes a la API de TMDb"],
                 "skills": ["ReactJS", "Vite", "Redux", "Axios", "Sass", "react-router-dom", "themoviedb API"],
                 "demo": "https://movie-app-mateober.vercel.app/home",
                 "code": "https://github.com/Mateober/movie-app",
@@ -106,7 +106,13 @@
             {
                 "title": "Bookhouse",
                 "subtitle": "Proyecto de Practica",
-                "description": "Bookhouse es un e-commerce de libros desarrollado como proyecto final para el curso de 'React Js' de Coderhouse. La aplicación ofrece una amplia gama de libros, permitiendo a los usuarios explorar diferentes categorías, ver detalles de cada libro y simular compras en línea.",
+                "description": "Desarrollé un e-commerce de libros, implementando el frontend con React.js.",
+                "works": [
+                    "Utilicé Firebase para almacenar y gestionar el catálogo de libros.",
+                    "Diseñé la interfaz y mejoré la experiencia de usuario.",
+                    "Implementé la lógica y funcionalidad del carrito de compras.",
+                    "Implementé la funcionalidad para visualizar cada libro individualmente con su información detallada."
+                ],
                 "skills": ["ReactJS", "Sass", "react-router-dom", "Firebase"],
                 "demo": "https://bookhouse-mateo-bertello.vercel.app",
                 "code": "https://github.com/Mateober/bookhouse-mateo-bertello",
@@ -118,7 +124,12 @@
             {
                 "title": "Sportscenter",
                 "subtitle": "Proyecto de Practica",
-                "description": "Sportscenter es un e-commerce de zapatillas creado como proyecto final para el curso de 'JavaScript' de Coderhouse. La plataforma permite a los usuarios navegar por una variedad de modelos de zapatillas y agregar tus productos al carrito",
+                "description": "Desarrollé un e-commerce de zapatillas",
+                "works": [
+                    "Desarrollé el frontend utilizando HTML5, Sass y JavaScript",
+                    "Implementé la lógica y funcionalidad del carrito de compras.",
+                    "Desarrollé un catálogo de productos donde los usuarios pueden ver las opciones disponibles"
+                ],
                 "skills": ["HTML5", "JavaScript", "Sass"],
                 "demo": "https://sportscenter-mateo-bertello.vercel.app/",
                 "code": "https://github.com/Mateober/sportscenter-mateo-bertello",

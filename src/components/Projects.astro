@@ -36,6 +36,12 @@ const { translations } = Astro.props;
                                 </div>
                             </div>
                             <p class="project-description">{project.description}</p>
+                            <p class="subtitle">Acciones y Funcionalidades Implementadas:</p>
+                            <ul class="to-does">
+                                {project?.works?.map((work) => (
+                                    <li>{work}</li>
+                                ))}
+                            </ul>
                             <div class="project-technologies">
                                 {project.skills.map((skill) => (
                                     <p>{skill}</p>

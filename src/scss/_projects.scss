@@ -87,6 +87,34 @@
                         font-size: 16px;
                         color: var(--project-text-color);
                     }
+                    .subtitle {
+                        margin-right: auto;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: rgb(221, 221, 221);
+                        border-bottom: 1px solid var(--project-text-color);
+                    }
+                    .to-does {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--project-text-color);
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                  
+                        li {
+                            list-style: circle;
+                            list-style-position: inside;
+                        }
+                        .work {
+                            display: flex;
+                            gap: 10px;
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
                     .project-technologies {
                         display: flex;
                         flex-direction: row;
