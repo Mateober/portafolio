@@ -347,28 +347,69 @@
 }
 .navbariconcolor {
     path {
-        fill: var(--white-black) !important;
+        fill: var(--title-color) !important;
     }
 }
 
 .arrow-language {
     path {
-        stroke: var(--white-black) !important;
+        stroke: var(--title-color) !important;
     }
 }
 
 .moon-icon {
     path {
-        stroke: var(--white-black) !important;
+        stroke: var(--title-color) !important;
     }
 }
 
-@media (max-width: 769px) {
+.navbar {
+    .icon-container {
+        position: relative;
+    }
+    .tooltip {
+        position: absolute;
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        top: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+    .tooltip::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #333 transparent;
+    }
+    .icon-container:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+    .icon-email {
+        g {
+            stroke: var(--title-color);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
     .navbar1 {
         padding: 20px 20px 20px 20px !important;
         .navbar1-1 {
             width: 100%;
-            justify-content: space-between;
+            gap: 20px;
         }
         .navbar1-2 {
             display: none;
@@ -381,5 +422,13 @@
         display: flex;
         width: 25px;
         height: 25px;
+        margin-left: auto;
+        cursor: pointer;
+        path {
+            stroke: var(--title-color);
+        }
+    }
+    .hamburger:hover path {
+        stroke: rgb(198, 198, 198);
     }
 }

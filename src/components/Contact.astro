@@ -60,12 +60,11 @@
     document.addEventListener('DOMContentLoaded', () => {
         const emailContainer = document.getElementById('emailContainer');
         const tooltip = document.getElementById('tooltip');
-        const emailText = document.getElementById('emailText');
 
-        if (emailContainer && tooltip && emailText) {
+        if (emailContainer && tooltip) {
             emailContainer.addEventListener('click', async () => {
                 try {
-                    await navigator.clipboard.writeText(emailText.textContent || '');
+                    await navigator.clipboard.writeText("mateob.dev@gmail.com");
                     tooltip.textContent = 'Copiado!';
 
                     // Cambiar de nuevo después de 2 segundos

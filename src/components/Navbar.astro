@@ -70,31 +70,11 @@ import Nav from './Nav.jsx';
             </div>
             <Languages {...translations} client:visible />
             <Theme client:only="react" />
-            <!--             <div class="icon-navbar-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    ><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        ><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"></path></g
-                    ></svg
+            <div class="hamburger">
+                <svg class="navbariconcolor" id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    ><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"></path></svg
                 >
-            </div> -->
-            <!--             <div class="icon-navbar-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    ><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        ><circle cx="12" cy="12" r="4"></circle><path d="M12 3v1m0 16v1m-9-9h1m16 0h1m-2.636-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707"></path></g
-                    ></svg
-                >
-            </div> -->
-            <!--             <div class="icon-navbar-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    ><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path></svg
-                >
-            </div> -->
-            <svg class="hamburger navbariconcolor" id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                ><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"></path></svg
-            >
-            <!--             <p>Inicio</p>
-            <p>Proyectos</p>
-            <p>Contacto</p> -->
+            </div>
         </div>
         <div class="navbar1-2">
             <a class="icon-container cv2" target="_blank" href="https://github.com/Mateober">
@@ -103,6 +83,15 @@ import Nav from './Nav.jsx';
                 >
                 <p class="cv">{translations?.navbar?.cv}</p>
             </a>
+            <div class="icon-container" id="navbar-email">
+                <svg class="icon-email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </g>
+                </svg>
+                <div class="tooltip" id="navbar-tooltip">Copiar</div>
+            </div>
             <a class="icon-container" target="_blank" href="https://github.com/Mateober">
                 <svg class="icon navbariconcolor" viewBox="0 0 128 128">
                     <g fill="white"
@@ -131,7 +120,7 @@ import Nav from './Nav.jsx';
             </div>
         </div>
     </div>
-    <div class="navbar2"> <Nav  client:only="react" {...translations}/></div>
+    <div class="navbar2"><Nav client:only="react" {...translations} /></div>
 </nav>
 
 <script is:inline>
@@ -142,5 +131,33 @@ import Nav from './Nav.jsx';
     document.querySelector('#close').addEventListener('click', () => {
         document.querySelector('.navbar-mobile-container').classList.remove('navbar-open');
         document.querySelector('.navbar-mobile').classList.remove('navbar-open2');
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const emailContainer = document.getElementById('navbar-email');
+        const tooltip = document.getElementById('navbar-tooltip');
+
+        if (emailContainer && tooltip) {
+            emailContainer.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText('mateob.dev@gmail.com');
+                    tooltip.textContent = 'Copiado!';
+
+                    // Cambiar de nuevo después de 2 segundos
+                    setTimeout(() => {
+                        tooltip.textContent = 'Copiar';
+                    }, 2000);
+                } catch (err) {
+                    console.error('Error al copiar el texto: ', err);
+                    tooltip.textContent = 'Error al copiar';
+
+                    setTimeout(() => {
+                        tooltip.textContent = 'Copiar';
+                    }, 2000);
+                }
+            });
+        }
     });
 </script>
