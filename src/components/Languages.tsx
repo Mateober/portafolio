@@ -5,7 +5,6 @@ const Languages = (translations) => {
     const [currentLanguage, setCurrentLanguage] = useState("es");
     const [open, setOpen] = useState(false);
     useEffect(() => {
-        console.log("hola")
         if (typeof window !== "undefined") {
             setCurrentLanguage(window.location.pathname.startsWith("/en") ? "en" : "es");
         }

@@ -50,6 +50,18 @@
                             fill: var(--white-black);
                         }
                     }
+                    .icon-color2 path:nth-of-type(2) {
+                        fill: var(--white-black);
+                    }
+                    .icon-color2 path:nth-of-type(3) {
+                        fill: var(--black-white);
+                    }
+                    .icon-color3 {
+                       path {
+                        fill: red;
+                       }
+                    }
+
                     .tooltip {
                         position: absolute;
                         bottom: 120%;

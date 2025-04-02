@@ -18,9 +18,10 @@
         "role": "Frontend Developer"
     },
     "skills": {
-        "frontend": "Expositor Frontend",
-        "backend": "Expositor Backend",
-        "herramientas": "Expositor de Herramientas"
+        "frontend": "Tecnologías Frontend",
+        "backend": "Tecnologías Backend",
+        "herramientas": "Herramientas",
+        "devops": "Tecnologías DevOps"
     },
     "extras": {
         "softskills": "Soft Skills",
@@ -66,7 +67,7 @@
                     "Configuré y gestioné un VPS completo (frontend, backend, base de datos y Redis), asegurando su seguridad y rendimiento.",
                     "Mejoré el SEO y configuré herramientas de análisis como Google Analytics y Microsoft Clarity."
                 ],
-                "skills": ["ReactJS", "Vite", "Redux", "Sass", "Axios", "React Router", "Node.js", "PostgreSQL", "Sequelize", "Redis", "Socket.IO", "Google OAuth", "Mercado Pago Checkout Pro"],
+                "skills": ["ReactJS", "Redux", "Sass", "Axios", "Node.js", "PostgreSQL", "Sequelize", "Redis", "Socket.IO", "Google OAuth", "Mercado Pago Checkout Pro"],
                 "demo": "https://futbolar.com.ar",
                 "code": null,
                 "img1": "/10.png",
@@ -95,7 +96,7 @@
                 "subtitle": "Proyecto de Practica",
                 "description": "Creé una aplicación web con React.js que consume la API de TMDb, permitiendo buscar y visualizar detalles actualizados de películas y programas de TV.",
                 "works": ["Diseñé la interfaz y la experiencia de usuario.", "Implementé la lógica para gestionar las solicitudes a la API de TMDb"],
-                "skills": ["ReactJS", "Vite", "Redux", "Axios", "Sass", "react-router-dom", "themoviedb API"],
+                "skills": ["ReactJS", "Redux", "Axios", "Sass", "themoviedb API"],
                 "demo": "https://movie-app-mateober.vercel.app/home",
                 "code": "https://github.com/Mateober/movie-app",
                 "img1": "/7.png",
@@ -113,7 +114,7 @@
                     "Implementé la lógica y funcionalidad del carrito de compras.",
                     "Implementé la funcionalidad para visualizar cada libro individualmente con su información detallada."
                 ],
-                "skills": ["ReactJS", "Sass", "react-router-dom", "Firebase"],
+                "skills": ["ReactJS", "Sass", "Firebase"],
                 "demo": "https://bookhouse-mateo-bertello.vercel.app",
                 "code": "https://github.com/Mateober/bookhouse-mateo-bertello",
                 "img1": "/4.png",

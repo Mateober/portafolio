@@ -52,7 +52,7 @@
                         display: flex;
                         justify-content: space-between;
                         p {
-                            font-size: 24px;
+                            font-size: 28px;
                             font-weight: 500;
                             color: var(--title-color);
                         }
@@ -92,7 +92,7 @@
                         font-weight: 400;
                         font-size: 18px;
                         color: rgb(221, 221, 221);
-                        border-bottom: 1px solid var(--project-text-color);
+                        border-bottom: 1px solid #66C0F4;
                     }
                     .to-does {
                         font-weight: 400;
@@ -103,8 +103,11 @@
                         gap: 10px;
                   
                         li {
-                            list-style: circle;
+                            list-style: disc;
                             list-style-position: inside;
+                        }
+                        li::marker {
+                            color:#66C0F4; /* Color del círculo */
                         }
                         .work {
                             display: flex;
