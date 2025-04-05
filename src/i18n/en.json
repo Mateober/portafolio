@@ -11,7 +11,7 @@
     "profile": {
         "nombre": "Mateo Bertello",
         "ciudad": "Rosario, Santa Fe, Argentina",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem. Vel quasi accusamus sunt ad earum, voluptate ut corporis quo itaque corrupti laborum perferendis molestias quis ullam! At, magni labore."
+        "descripcion": "I'm Mateo Bertello, a fullstack developer with a focus on frontend. I enjoy turning ideas and designs into websites that match the original vision, with clean code and great attention to detail. I like to understand the product, work closely with teams, and bring innovative solutions to the table. I'm self-taught, responsible, and always ready for a new challenge."
     },
     "level": {
         "level": "Junior",
@@ -57,7 +57,16 @@
             {
                 "title": "Futbolar",
                 "subtitle": "Real Project",
-                "description": "Futbolar is a web platform for soccer fans in Argentina, with over 200 users. Users can send real-time messages in dedicated forums for different divisions of Argentine soccer, fostering debate and community. The platform allows users to choose their favorite teams and customize their profiles. It also features a moderation system with moderator and administrator roles, ensuring a safe and organized environment. Additionally, it includes an administration panel to manage divisions and teams, making content organization easier. I developed both the frontend and backend of the platform.",
+                "description": "I developed a real-time forum platform for Argentine soccer fans, with over 200 registered users.",
+                "works": [
+                    "Built the frontend using React.js and the backend with Node.js, Express, and Sequelize, using PostgreSQL as the database.",
+                    "Optimized performance by implementing Redis for session caching and faster request handling.",
+                    "Integrated Socket.io to enable real-time messaging.",
+                    "Added Google OAuth for user registration.",
+                    "Integrated Mercado Pago Checkout Pro to process donations and manage user benefits.",
+                    "Configured and managed a full VPS setup (frontend, backend, database, and Redis), ensuring security and performance.",
+                    "Improved SEO and set up analytics tools like Google Analytics and Microsoft Clarity."
+                ],
                 "skills": ["ReactJS", "Redux", "Sass", "Axios", "Node.js", "PostgreSQL", "Sequelize", "Redis", "Socket.IO", "Google OAuth", "Mercado Pago Checkout Pro"],
                 "demo": "https://futbolar.com.ar",
                 "code": null,
@@ -69,7 +78,11 @@
             {
                 "title": "SOL Kindergarten",
                 "subtitle": "Real Project",
-                "description": "This project is a landing page designed for SOL Kindergarten, an educational institution focused on early childhood education. The page provides detailed information about the institution, a photo gallery, and a contact section to facilitate communication, offering a clear and accessible experience for interested families.",
+                "description": "Designed and developed an optimized landing page for a kindergarten using Astro.",
+                "works": [
+                    "Implemented advanced SEO, focusing on structure, metadata, and loading optimization.",
+                    "Added tracking tools like Google Analytics and Microsoft Clarity to analyze visitor behavior."
+                ],
                 "skills": ["Astro", "Sass"],
                 "demo": "https://jardinsolrosario.com.ar",
                 "code": null,
@@ -81,7 +94,8 @@
             {
                 "title": "MovieApp",
                 "subtitle": "Practice Project",
-                "description": "MovieApp is a web application that allows users to search for information about movies and TV shows. It uses The Movie Database (TMDb) API to retrieve up-to-date data, including plot details, ratings, cast, and more. Users can perform searches, view movie and TV show details.",
+                "description": "Created a web app with React.js that consumes the TMDb API, allowing users to search for and view up-to-date details on movies and TV shows.",
+                "works": ["Designed the user interface and user experience.", "Implemented logic to manage API requests to TMDb."],
                 "skills": ["ReactJS", "Redux", "Axios", "Sass", "themoviedb API"],
                 "demo": "https://movie-app-mateober.vercel.app/home",
                 "code": "https://github.com/Mateober/movie-app",
@@ -93,7 +107,13 @@
             {
                 "title": "Bookhouse",
                 "subtitle": "Practice Project",
-                "description": "Bookhouse is a book e-commerce developed as the final project for the 'React Js' course at Coderhouse. The application offers a wide range of books, allowing users to explore different categories, view details of each book, and simulate online purchases.",
+                "description": "Developed a book e-commerce platform, implementing the frontend with React.js.",
+                "works": [
+                    "Used Firebase to store and manage the book catalog.",
+                    "Designed the interface and improved user experience.",
+                    "Implemented shopping cart functionality.",
+                    "Added individual book detail pages with complete information."
+                ],
                 "skills": ["ReactJS", "Sass", "Firebase"],
                 "demo": "https://bookhouse-mateo-bertello.vercel.app",
                 "code": "https://github.com/Mateober/bookhouse-mateo-bertello",
@@ -105,7 +125,8 @@
             {
                 "title": "Sportscenter",
                 "subtitle": "Practice Project",
-                "description": "Sportscenter is a sneaker e-commerce created as the final project for the 'JavaScript' course at Coderhouse. The platform allows users to browse through a variety of sneaker models and add their products to the cart.",
+                "description": "Developed an e-commerce platform for sneakers.",
+                "works": ["Built the frontend using HTML5, Sass, and JavaScript.", "Implemented shopping cart functionality.", " Created a product catalog where users can browse available options."],
                 "skills": ["HTML5", "JavaScript", "Sass"],
                 "demo": "https://sportscenter-mateo-bertello.vercel.app/",
                 "code": "https://github.com/Mateober/sportscenter-mateo-bertello",
