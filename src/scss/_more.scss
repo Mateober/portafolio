@@ -4,9 +4,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     padding: 20px;
-    justify-content: space-between;
+   
     svg {
         color: var(--white-blue) !important;
     }
@@ -67,9 +67,20 @@
         }
     }
 }
+.availability {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .availability,
 .softskills,
 .languages {
     padding-left: 5px;
+}
+
+@media (max-width: 990px) { 
+    .extras {
+        gap: 30px;
+    }
 }
