@@ -147,5 +147,10 @@
         "frase": "Si alguien más lo hizo, significa que yo también puedo hacerlo. Y si nadie lo ha hecho, entonces seré el primero.",
         "copyright": "© 2025 Mateo Bertello. Todos los derechos reservados.",
         "desarrollado": "Desarrolado con Astro"
+    },
+    "global": {
+        "copy": "Copiar",
+        "copied": "Copiado",
+        "copyError": "Error al copiar"
     }
 }

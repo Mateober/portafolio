@@ -12,8 +12,11 @@ const { translations } = Astro.props;
                 <p class="location-text">{translations?.profile?.ciudad}</p>
             </div>
         </div>
-        <p class="profile-description">
-            {translations?.profile?.descripcion}
-        </p>
+        <div class="profile-description">
+            <p>{translations?.profile?.descripcion}</p>
+            <p class="see-more">Ver más...</p>
+            
+        </div>
+        
     </div>
 </div>

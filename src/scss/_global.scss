@@ -167,6 +167,7 @@ a {
     --color-blue-hover: #60a5fa;
     --tag-color: #008efb;
     --navbar-text-hover: #cbcbcb;
+    //60a5fa
     --tag-green-color: #10b981;
     --text-color: #c4c4c4;
     --text-extras: #c4c4c4;
@@ -237,4 +238,8 @@ a {
     --contact-item-color: #1d4ed8;
     --contact-bg: #fff;
     --subtitle-project-color: #000000;
+}
+
+.no-scroll {
+    overflow: hidden !important;
 }

@@ -3,6 +3,7 @@ const { translations } = Astro.props;
 import Languages from './Languages';
 import Theme from './Theme.jsx';
 import Nav from './Nav.jsx';
+import NavMobile from './NavMobile.jsx';
 ---
 
 <nav class="navbar">
@@ -20,9 +21,7 @@ import Nav from './Nav.jsx';
             </div>
         </div>
         <div class="mobile-body">
-            <p>{translations?.navbar?.inicio}</p>
-            <p>{translations?.navbar?.proyectos}</p>
-            <p>{translations?.navbar?.contacto}</p>
+            <NavMobile client:only="react" {...translations} />
         </div>
         <div class="mobile-footer">
             <a class="cv-mobile" target="_blank" href="https://github.com/Mateober">
@@ -32,6 +31,21 @@ import Nav from './Nav.jsx';
                 <p class="cv">{translations?.navbar?.cv}</p>
             </a>
             <div class="icons-mobile">
+                <div
+                    class="icon-container"
+                    id="navbar-email-mobile"
+                    data-copy-text={translations?.global?.copy}
+                    data-copied-text={translations?.global?.copied}
+                    data-error-text={translations?.global?.copyError}
+                >
+                    <svg class="icon-email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </g>
+                    </svg>
+                    <div class="tooltip" id="navbar-tooltip-mobile">{translations?.global?.copy}</div>
+                </div>
                 <a target="_blank" href="https://github.com/Mateober">
                     <svg viewBox="0 0 128 128">
                         <g fill="white"
@@ -83,14 +97,14 @@ import Nav from './Nav.jsx';
                 >
                 <p class="cv">{translations?.navbar?.cv}</p>
             </a>
-            <div class="icon-container" id="navbar-email">
+            <div class="icon-container" id="navbar-email" data-copy-text={translations?.global?.copy} data-copied-text={translations?.global?.copied} data-error-text={translations?.global?.copyError}>
                 <svg class="icon-email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                         <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </g>
                 </svg>
-                <div class="tooltip" id="navbar-tooltip">Copiar</div>
+                <div class="tooltip" id="navbar-tooltip">{translations?.global?.copy}</div>
             </div>
             <a class="icon-container" target="_blank" href="https://github.com/Mateober">
                 <svg class="icon navbariconcolor" viewBox="0 0 128 128">
@@ -127,37 +141,66 @@ import Nav from './Nav.jsx';
     document.querySelector('#hamburger').addEventListener('click', () => {
         document.querySelector('.navbar-mobile-container').classList.add('navbar-open');
         document.querySelector('.navbar-mobile').classList.add('navbar-open2');
+        document.body.classList.add('no-scroll');
     });
     document.querySelector('#close').addEventListener('click', () => {
         document.querySelector('.navbar-mobile-container').classList.remove('navbar-open');
         document.querySelector('.navbar-mobile').classList.remove('navbar-open2');
+        document.body.classList.remove('no-scroll');
     });
 </script>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        const emailContainer = document.getElementById('navbar-email-mobile');
+        const tooltip = document.getElementById('navbar-tooltip-mobile');
+
+        if (!emailContainer || !tooltip) return;
+
+        const { copyText, copiedText, errorText } = emailContainer.dataset;
+
+        const resetTooltip = () => {
+            setTimeout(() => {
+                tooltip.textContent = copyText || '';
+            }, 2000);
+        };
+
+        emailContainer.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText('mateob.dev@gmail.com');
+                tooltip.textContent = copiedText || '';
+            } catch {
+                tooltip.textContent = errorText || '';
+            } finally {
+                resetTooltip();
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
         const emailContainer = document.getElementById('navbar-email');
         const tooltip = document.getElementById('navbar-tooltip');
 
-        if (emailContainer && tooltip) {
-            emailContainer.addEventListener('click', async () => {
-                try {
-                    await navigator.clipboard.writeText('mateob.dev@gmail.com');
-                    tooltip.textContent = 'Copiado!';
+        if (!emailContainer || !tooltip) return;
 
-                    // Cambiar de nuevo después de 2 segundos
-                    setTimeout(() => {
-                        tooltip.textContent = 'Copiar';
-                    }, 2000);
-                } catch (err) {
-                    console.error('Error al copiar el texto: ', err);
-                    tooltip.textContent = 'Error al copiar';
+        const { copyText, copiedText, errorText } = emailContainer.dataset;
 
-                    setTimeout(() => {
-                        tooltip.textContent = 'Copiar';
-                    }, 2000);
-                }
-            });
-        }
+        const resetTooltip = () => {
+            setTimeout(() => {
+                tooltip.textContent = copyText || '';
+            }, 2000);
+        };
+
+        emailContainer.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText('mateob.dev@gmail.com');
+                tooltip.textContent = copiedText || '';
+            } catch {
+                tooltip.textContent = errorText || '';
+            } finally {
+                resetTooltip();
+            }
+        });
     });
 </script>

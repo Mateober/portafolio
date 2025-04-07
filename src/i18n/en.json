@@ -143,5 +143,10 @@
         "frase": "If someone else did it, it means I can do it too. And if no one has done it, then I'll be the first.",
         "copyright": "© 2025 Mateo Bertello. All rights reserved.",
         "desarrollado": "Developed with Astro"
+    },
+    "global": {
+        "copy": "Copy",
+        "copied": "Copied!",
+        "copyError": "Error copying"
     }
 }

@@ -1,10 +1,14 @@
+---
+const { translations } = Astro.props;
+---
+
 <div class="contact" id="contact">
     <div class="contact-title">
         <p>Contacto</p>
     </div>
 
     <div class="container-grid">
-        <div class="contact-item" id="emailContainer">
+        <div class="contact-item" id="contact-email" data-copy-text={translations?.global?.copy} data-copied-text={translations?.global?.copied} data-error-text={translations?.global?.copyError}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
@@ -15,7 +19,7 @@
                 <p class="contact-asc">Email</p>
                 <p class="contact-desc" id="emailText">mateob.dev@gmail.com</p>
             </div>
-            <div class="tooltip" id="tooltip">Copiar</div>
+            <div class="tooltip" id="contact-tooltip">{translations?.global?.copy}</div>
         </div>
 
         <a class="contact-item" href="https://www.linkedin.com/in/mateo-bertello" target="_blank">
@@ -58,28 +62,28 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const emailContainer = document.getElementById('emailContainer');
-        const tooltip = document.getElementById('tooltip');
+        const emailContainer = document.getElementById('contact-email');
+        const tooltip = document.getElementById('contact-tooltip');
 
-        if (emailContainer && tooltip) {
-            emailContainer.addEventListener('click', async () => {
-                try {
-                    await navigator.clipboard.writeText("mateob.dev@gmail.com");
-                    tooltip.textContent = 'Copiado!';
+        if (!emailContainer || !tooltip) return;
 
-                    // Cambiar de nuevo después de 2 segundos
-                    setTimeout(() => {
-                        tooltip.textContent = 'Copiar';
-                    }, 2000);
-                } catch (err) {
-                    console.error('Error al copiar el texto: ', err);
-                    tooltip.textContent = 'Error al copiar';
+        const { copyText, copiedText, errorText } = emailContainer.dataset;
 
-                    setTimeout(() => {
-                        tooltip.textContent = 'Copiar';
-                    }, 2000);
-                }
-            });
-        }
+        const resetTooltip = () => {
+            setTimeout(() => {
+                tooltip.textContent = copyText || '';
+            }, 2000);
+        };
+
+        emailContainer.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText('mateob.dev@gmail.com');
+                tooltip.textContent = copiedText || '';
+            } catch {
+                tooltip.textContent = errorText || '';
+            } finally {
+                resetTooltip();
+            }
+        });
     });
 </script>
