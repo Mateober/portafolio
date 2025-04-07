@@ -43,7 +43,7 @@
         "hobbie3": "Running",
         "hobbie4": "Movies"
     },
-    "proyects": {
+    "projects": {
         "proyectos": "Recent Projects",
         "real": "Real Project",
         "practica": "Practice Project",
@@ -53,7 +53,8 @@
         "e-commerce": "E-commerce",
         "btnprobar": "Try Now",
         "btncodigo": "View Code",
-        "proyects": [
+        "funcionalidades": "Implemented Features:",
+        "projects": [
             {
                 "title": "Futbolar",
                 "subtitle": "Real Project",
@@ -148,5 +149,9 @@
         "copy": "Copy",
         "copied": "Copied!",
         "copyError": "Error copying"
+    },
+    "contact": {
+        "contacto": "Contact",
+        "ubicacion": "Location"
     }
 }

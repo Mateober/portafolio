@@ -4,7 +4,7 @@ const { translations } = Astro.props;
 
 <div class="contact" id="contact">
     <div class="contact-title">
-        <p>Contacto</p>
+        <p>{translations?.contact?.contacto}</p>
     </div>
 
     <div class="container-grid">
@@ -53,7 +53,7 @@ const { translations } = Astro.props;
                 ></svg
             >
             <div class="contact-data">
-                <p class="contact-asc">Ubicación</p>
+                <p class="contact-asc">{translations?.contact?.ubicacion}</p>
                 <p class="contact-desc">Rosario, Santa Fe, Argentina</p>
             </div>
         </a>

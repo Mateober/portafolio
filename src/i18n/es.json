@@ -43,7 +43,7 @@
         "hobbie3": "Correr",
         "hobbie4": "Peliculas"
     },
-    "proyects": {
+    "projects": {
         "proyectos": "Proyectos Recientes",
         "real": "Proyecto Real",
         "practica": "Proyecto de Practica",
@@ -53,7 +53,8 @@
         "e-commerce": "E-commerce",
         "btnprobar": "Probar Ahora",
         "btncodigo": "Ver Codigo",
-        "proyects": [
+        "funcionalidades": "Funcionalidades Implementadas:",
+        "projects": [
             {
                 "title": "Futbolar",
                 "subtitle": "Proyecto Real",
@@ -152,5 +153,9 @@
         "copy": "Copiar",
         "copied": "Copiado",
         "copyError": "Error al copiar"
+    },
+    "contact": {
+        "contacto": "Contacto",
+        "ubicacion": "Ubicación"
     }
 }

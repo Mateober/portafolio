@@ -1,16 +1,15 @@
 ---
-import projects from './projects.json';
 const { translations } = Astro.props;
 ---
 
 <div id="projects" class="projects">
     <div class="projects-title">
-        <p>{translations?.proyects?.proyectos}</p>
+        <p>{translations?.projects?.proyectos}</p>
     </div>
     <div class="projects-list">
         <div class="projects-group">
             {
-                translations?.proyects?.proyects.map((project) => (
+                translations?.projects?.projects.map((project) => (
                     <div class="project-card">
                         <div class="project-img-container">
                             <div class="project-image-container2">
@@ -36,7 +35,7 @@ const { translations } = Astro.props;
                                 </div>
                             </div>
                             <p class="project-description">{project.description}</p>
-                            <p class="subtitle">Acciones y Funcionalidades Implementadas:</p>
+                            <p class="subtitle">{translations?.projects?.funcionalidades}</p>
                             <ul class="to-does">
                                 {project?.works?.map((work) => (
                                     <li>{work}</li>
@@ -64,7 +63,7 @@ const { translations } = Astro.props;
                                         <polyline points="8.25 2.75,2.75 2.75,2.75 13.25,13.25 13.25,13.25 7.75" />
                                         <path d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5" />
                                     </svg>
-                                    {translations?.proyects?.btnprobar}
+                                    {translations?.projects?.btnprobar}
                                 </a>
 
                                 <a class={`btn ${project.code ? '' : 'btn-disable'}`} href={project.code || null} target="_blank">
@@ -77,7 +76,7 @@ const { translations } = Astro.props;
                                             />
                                         </g>
                                     </svg>
-                                    {translations?.proyects?.btncodigo}
+                                    {translations?.projects?.btncodigo}
                                 </a>
                             </div>
                         </div>
