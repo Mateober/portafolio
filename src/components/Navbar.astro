@@ -1,6 +1,7 @@
 ---
 const { translations } = Astro.props;
 import Languages from './Languages';
+import Resume from './Resume';
 import Theme from './Theme.jsx';
 import Nav from './Nav.jsx';
 import NavMobile from './NavMobile.jsx';
@@ -91,12 +92,7 @@ import NavMobile from './NavMobile.jsx';
             </div>
         </div>
         <div class="navbar1-2">
-            <a class="icon-container cv2" target="_blank" href="https://github.com/Mateober">
-                <svg class="navbariconcolor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    ><path fill="#fff" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"></path></svg
-                >
-                <p class="cv">{translations?.navbar?.cv}</p>
-            </a>
+            <Resume {...translations} client:visible/>
             <div class="icon-container" id="navbar-email" data-copy-text={translations?.global?.copy} data-copied-text={translations?.global?.copied} data-error-text={translations?.global?.copyError}>
                 <svg class="icon-email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

@@ -432,3 +432,74 @@
         stroke: rgb(198, 198, 198);
     }
 }
+
+.resume-container {
+    background-color: var(--navbar-buttons-bg);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    width: 130px;
+    .btn-resume {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--title-color);
+        }
+    }
+
+    &:hover {
+        background-color: var(--navbar-buttons-hover-bg);
+    }
+
+    // Evita el hover cuando el cursor está sobre .idiomas
+    &:has(.resumes:hover) {
+        background-color: var(--navbar-buttons-bg) !important;
+    }
+    .open {
+        opacity: 1 !important;
+        display: block !important;
+    }
+
+    .resumes {
+        position: absolute;
+        top: 120%;
+        background-color: var(--navbar-buttons-bg);
+        width: 140%;
+        border: 1px solid var(--idiomas-border);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        .resume {
+            display: flex;
+            align-items: center;
+            padding: 20px 0 20px 10px;
+            gap: 5px;
+            &:hover {
+                background-color: var(--navbar-buttons-hover-bg);
+            }
+            svg {
+                width: 20px;
+                height: 20px;
+
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--title-color);
+        }
+    }
+}
