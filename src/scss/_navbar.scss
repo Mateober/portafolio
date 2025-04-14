@@ -431,8 +431,26 @@
     .hamburger:hover path {
         stroke: rgb(198, 198, 198);
     }
+    .icon-email {
+        background-color: white;
+        border-radius: 999px;
+        padding: 2px;
+    }
 }
+.resume-icon {
+    path {
+        stroke: var(--title-color);
+    }
+    circle {
+        stroke: var(--title-color);
+    }
+}
+.resume-icon4 {
+    path {
 
+        fill: var(--title-color);
+    }
+}
 .resume-container {
     background-color: var(--navbar-buttons-bg);
     height: 100%;
@@ -442,14 +460,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
-    .resume-icon {
-        path {
-            stroke: var(--title-color);
-        }
-        circle {
-            stroke: var(--title-color);
-        }
-    }
     .resume-icon2 {
         g {
             stroke: var(--title-color);
