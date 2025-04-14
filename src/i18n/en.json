@@ -18,7 +18,7 @@
     },
     "level": {
         "level": "Junior",
-        "role": "Frontend Developer"
+        "role": "Fullstack Developer"
     },
     "skills": {
         "frontend": "Frontend Technologies",
@@ -144,7 +144,7 @@
     },
     "footer": {
         "nombre": "Mateo Bertello",
-        "descripcion": "Frontend Developer passionate about creating exceptional digital experiences.",
+        "descripcion": "Fullstack Developer specialized in frontend, with a passion for crafting exceptional digital experiences.",
         "frase": "If someone else did it, it means I can do it too. And if no one has done it, then I'll be the first.",
         "copyright": "© 2025 Mateo Bertello. All rights reserved.",
         "desarrollado": "Developed with Astro"
