@@ -4,7 +4,10 @@
         "inicio": "HOME",
         "proyectos": "PROJECTS",
         "contacto": "CONTACT",
-        "cv": "Download CV",
+        "cv": "Resume",
+        "cvDownload": "Download Resume",
+        "cvView": "View Resume",
+        "cvUrl": "/CV-Mateo-Bertello-EN.pdf",
         "nombre": "Mateo Bertello",
         "idioma": "English"
     },
