@@ -88,7 +88,7 @@
                     "Implementé un SEO avanzado, cuidando la estructura, metadatos y optimización de carga.",
                     "Añadí herramientas de seguimiento como Google Analytics y Microsoft Clarity para analizar el comportamiento de los visitantes."
                 ],
-                "skills": ["Astro", "Sass"],
+                "skills": ["Astro", "Tailwind CSS", "Sass"],
                 "demo": "https://jardinsolrosario.com.ar",
                 "code": null,
                 "img1": "/8.png",
